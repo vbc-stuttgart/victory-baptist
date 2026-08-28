@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: 'Datenschutzerklärung',
-  description: 'Datenschutzerklärung der Victory Baptist Church Stuttgart gemäß DSGVO.',
+  title: 'Privacy Notice',
+  description: 'Privacy Notice of Victory Baptist Church Stuttgart in accordance with the GDPR.',
   robots: { index: false },
 };
 
@@ -12,136 +12,133 @@ export default function DatenschutzPage() {
     <>
       <section className="bg-church-navy section-padding pt-40">
         <div className="container-base">
-          <span className="section-label block mb-3 text-church-gold">Privacy</span>
-          <h1 className="text-white text-4xl md:text-5xl">Datenschutzerklärung</h1>
+          <span className="section-label block mb-3 text-church-gold">Legal</span>
+          <h1 className="text-white text-4xl md:text-5xl">Privacy Notice</h1>
         </div>
       </section>
 
       <SectionWrapper bg="cream">
         <div className="prose-church max-w-3xl">
 
-          <h2>1. Verantwortliche Stelle</h2>
+          <h2>1. Data Controller</h2>
           <p>
-            Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+            The party responsible for data processing on this website is:
           </p>
           <p>
             <strong>Victory Baptist Church Stuttgart</strong><br />
             Schulze-Delitzsch-Straße 30<br />
             70565 Stuttgart<br />
-            E-Mail:{' '}
-            <a href="mailto:info@victorybaptist-stuttgart.de">
-              info@victorybaptist-stuttgart.de
+            Email:{' '}
+            <a href="mailto:victory.stuttgart@gmail.com">
+              victory.stuttgart@gmail.com
             </a>
           </p>
 
-          <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
+          <h2>2. Collection and Storage of Personal Data</h2>
 
-          <h3>a) Server-Logfiles</h3>
+          <h3>a) Server Log Files</h3>
           <p>
-            Beim Besuch dieser Website übermittelt Ihr Browser automatisch Informationen an den
-            Server, auf dem diese Website gehostet wird. Diese Informationen werden in sogenannten
-            Server-Logfiles gespeichert und umfassen:
+            When you visit this website, your browser automatically transmits information to the
+            server on which this website is hosted. This information is stored in so-called server
+            log files and includes:
           </p>
           <ul>
-            <li>IP-Adresse des anfragenden Geräts</li>
-            <li>Datum und Uhrzeit des Zugriffs</li>
-            <li>Name und URL der abgerufenen Datei</li>
-            <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
-            <li>Verwendeter Browser und ggf. das Betriebssystem</li>
+            <li>IP address of the requesting device</li>
+            <li>Date and time of access</li>
+            <li>Name and URL of the file accessed</li>
+            <li>Website from which access was made (referrer URL)</li>
+            <li>Browser used and, where applicable, the operating system</li>
           </ul>
           <p>
-            Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-            (berechtigtes Interesse an der Sicherheit und dem Betrieb der Website). Die Logfiles
-            werden nach spätestens 30 Tagen gelöscht.
+            This data is processed on the basis of Art. 6(1)(f) GDPR (legitimate interest in the
+            security and operation of the website). Log files are deleted after a maximum of 30 days.
           </p>
 
-          <h3>b) Kontaktformular</h3>
+          <h3>b) Contact Form</h3>
           <p>
-            Wenn Sie uns über das Kontaktformular auf dieser Website eine Nachricht senden, werden
-            folgende Daten verarbeitet:
+            When you send us a message via the contact form on this website, the following data
+            is processed:
           </p>
           <ul>
             <li>Name</li>
-            <li>E-Mail-Adresse</li>
-            <li>Betreff (Thema Ihrer Anfrage)</li>
-            <li>Inhalt Ihrer Nachricht</li>
+            <li>Email address</li>
+            <li>Subject (topic of your enquiry)</li>
+            <li>Content of your message</li>
           </ul>
           <p>
-            Die Verarbeitung erfolgt ausschließlich zur Bearbeitung Ihrer Anfrage auf Grundlage von
-            Art. 6 Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen) bzw. Art. 6 Abs. 1
-            lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Die Daten werden
-            nicht an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht, sofern keine
-            gesetzlichen Aufbewahrungspflichten bestehen.
+            Processing takes place solely to handle your enquiry on the basis of Art. 6(1)(b) GDPR
+            (performance of pre-contractual measures) or Art. 6(1)(f) GDPR (legitimate interest in
+            responding to enquiries). Data is not passed on to third parties and is deleted after
+            processing is complete, unless statutory retention obligations apply.
           </p>
 
           <h2>3. Cookies</h2>
           <p>
-            Diese Website verwendet keine Tracking-Cookies oder Cookies zu Werbe- und
-            Analysezwecken. Es werden ausschließlich technisch notwendige Cookies eingesetzt, die
-            für den Betrieb der Website erforderlich sind (z. B. Sitzungscookies). Diese Cookies
-            werden automatisch gelöscht, wenn Sie Ihren Browser schließen. Einer Einwilligung
-            bedarf es hierfür nicht (Art. 6 Abs. 1 lit. f DSGVO).
+            This website does not use tracking cookies or cookies for advertising or analysis
+            purposes. Only technically necessary cookies are used that are required for the operation
+            of the website (e.g. session cookies). These cookies are automatically deleted when you
+            close your browser. No consent is required for this (Art. 6(1)(f) GDPR).
           </p>
 
-          <h2>4. Schriftarten</h2>
+          <h2>4. Fonts</h2>
           <p>
-            Diese Website verwendet Google Fonts. Die Schriftdateien werden jedoch beim
-            Erstellen der Website heruntergeladen und auf unserem eigenen Server ausgeliefert
-            (Self-Hosting). Es werden daher beim Laden der Seite <strong>keine Verbindungen zu
-            Google-Servern</strong> hergestellt und keine Daten an Google übertragen.
+            This website uses Google Fonts. However, the font files are downloaded when the website
+            is built and served from our own server (self-hosting). Therefore, <strong>no connections
+            to Google servers</strong> are established when the page loads and no data is transferred
+            to Google.
           </p>
 
           <h2>5. Hosting</h2>
           <p>
-            Diese Website wird bei einem externen Hosting-Anbieter betrieben. Personenbezogene
-            Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters
-            gespeichert. Die Verarbeitung erfolgt auf Grundlage eines Auftragsverarbeitungsvertrags
-            (AVV) gemäß Art. 28 DSGVO.
-            {/* TODO: Hosting-Anbieter und ggf. Serverstandort ergänzen */}
+            This website is operated by an external hosting provider. Personal data collected on
+            this website is stored on the host&apos;s servers. Processing is carried out on the basis
+            of a data processing agreement (DPA) in accordance with Art. 28 GDPR.
+            {/* TODO: Add hosting provider name and server location */}
           </p>
 
-          <h2>6. Ihre Rechte</h2>
-          <p>Sie haben gegenüber uns folgende Rechte:</p>
+          <h2>6. Your Rights</h2>
+          <p>You have the following rights with regard to us:</p>
           <ul>
             <li>
-              <strong>Auskunftsrecht</strong> (Art. 15 DSGVO): Sie können Auskunft über die von
-              uns verarbeiteten personenbezogenen Daten verlangen.
+              <strong>Right of access</strong> (Art. 15 GDPR): You may request information about the
+              personal data we process about you.
             </li>
             <li>
-              <strong>Berichtigungsrecht</strong> (Art. 16 DSGVO): Sie können die Berichtigung
-              unrichtiger Daten verlangen.
+              <strong>Right to rectification</strong> (Art. 16 GDPR): You may request the correction
+              of inaccurate data.
             </li>
             <li>
-              <strong>Löschungsrecht</strong> (Art. 17 DSGVO): Sie können unter bestimmten
-              Voraussetzungen die Löschung Ihrer Daten verlangen.
+              <strong>Right to erasure</strong> (Art. 17 GDPR): Under certain conditions you may
+              request the deletion of your data.
             </li>
             <li>
-              <strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO): Sie können die
-              Einschränkung der Verarbeitung Ihrer Daten verlangen.
+              <strong>Right to restriction of processing</strong> (Art. 18 GDPR): You may request
+              that the processing of your data be restricted.
             </li>
             <li>
-              <strong>Widerspruchsrecht</strong> (Art. 21 DSGVO): Sie können der Verarbeitung
-              Ihrer Daten widersprechen, soweit diese auf berechtigten Interessen beruht.
+              <strong>Right to object</strong> (Art. 21 GDPR): You may object to the processing of
+              your data where it is based on legitimate interests.
             </li>
             <li>
-              <strong>Beschwerderecht</strong>: Sie haben das Recht, sich bei der zuständigen
-              Datenschutz-Aufsichtsbehörde zu beschweren. In Baden-Württemberg ist dies der
-              Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg
-              (LfDI BW), Postfach 10 29 32, 70025 Stuttgart.
+              <strong>Right to lodge a complaint</strong>: You have the right to lodge a complaint
+              with the competent supervisory authority. In Baden-Württemberg this is the State
+              Commissioner for Data Protection and Freedom of Information
+              (Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg —
+              LfDI BW), Postfach 10 29 32, 70025 Stuttgart.
             </li>
           </ul>
           <p>
-            Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{' '}
-            <a href="mailto:info@victorybaptist-stuttgart.de">
-              info@victorybaptist-stuttgart.de
+            To exercise your rights, please contact us at:{' '}
+            <a href="mailto:victory.stuttgart@gmail.com">
+              victory.stuttgart@gmail.com
             </a>
           </p>
 
-          <h2>7. Aktualität dieser Datenschutzerklärung</h2>
+          <h2>7. Currency of this Privacy Notice</h2>
           <p>
-            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand August 2025. Durch die
-            Weiterentwicklung unserer Website oder aufgrund geänderter gesetzlicher bzw. behördlicher
-            Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern.
+            This Privacy Notice is currently valid and dated August 2025. As our website develops
+            or due to changes in legal or regulatory requirements, it may be necessary to amend
+            this Privacy Notice.
           </p>
 
         </div>

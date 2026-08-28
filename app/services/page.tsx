@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import GallerySection from '@/components/sections/GallerySection';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import BibleVerseSection from '@/components/sections/BibleVerseSection';
 import Button from '@/components/ui/Button';
-import { RiMapPin2Line, RiArrowRightLine, RiCarLine, RiBusLine } from 'react-icons/ri';
+import { RiMapPin2Line, RiArrowRightLine, RiCarLine, RiBusLine, RiInformationLine, RiMailLine } from 'react-icons/ri';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -11,57 +12,15 @@ export const metadata: Metadata = {
     'Join Victory Baptist Church Stuttgart — Sunday services at 10:45 AM, Sunday School at 10:20 AM, and Wednesday prayer meetings.',
 };
 
-const services = [
-  {
-    day:    'Sunday',
-    time:   '9:00 AM',
-    title:  'German Service',
-    desc:   'A German-language service for our German-speaking friends. All are welcome.',
-    sub:    'Auf Deutsch',
-    muted:  true,
-  },
-  {
-    day:    'Sunday',
-    time:   '10:20 AM',
-    title:  'Sunday School',
-    desc:   'Separate classes for Ladies, Men, and Teens — in-depth Bible study in a smaller group setting before the main service.',
-    sub:    'Ladies · Men · Teens',
-    muted:  false,
-  },
-  {
-    day:    'Sunday',
-    time:   '10:45 AM',
-    title:  'Morning Service',
-    desc:   'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible. Nursery (0–3) and Junior Church (4–12) run simultaneously.',
-    sub:    'Main Service · All Welcome',
-    muted:  false,
-  },
-  {
-    day:    'Sunday',
-    time:   'Evening',
-    title:  'Evening Service',
-    desc:   'Biblical teaching and discipleship — a deeper study of God\'s Word to help believers grow in faith and knowledge.',
-    sub:    'Teaching & Discipleship',
-    muted:  false,
-  },
-  {
-    day:    'Wednesday',
-    time:   'Evening',
-    title:  'Prayer Meeting',
-    desc:   'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.',
-    sub:    'Prayer & Fellowship',
-    muted:  false,
-  },
-];
 
 const ministries = [
   { title: 'Nursery',                desc: 'Childcare for infants and toddlers ages 0–3, provided during all services.' },
   { title: 'Junior Church',          desc: 'A dedicated programme for children ages 4–12 running during the Sunday morning service at 10:45 AM.' },
-  { title: 'Ladies Sunday School',   desc: 'Women\'s Bible class every Sunday at 10:20 AM.' },
-  { title: 'Men\'s Sunday School',   desc: 'Men\'s Bible class every Sunday at 10:20 AM.' },
+  { title: 'Ladies Sunday School',   desc: "Women's Bible class every Sunday at 10:20 AM." },
+  { title: "Men's Sunday School",    desc: "Men's Bible class every Sunday at 10:20 AM." },
   { title: 'Teens Sunday School',    desc: 'Teenage class every Sunday at 10:20 AM.' },
-  { title: 'Ladies\' Fellowship',    desc: 'Regular fellowship gatherings for the women of the church.' },
-  { title: 'Men\'s Fellowship',      desc: 'Regular fellowship and discipleship for the men of the church.' },
+  { title: "Ladies' Fellowship",     desc: 'Regular fellowship gatherings for the women of the church.' },
+  { title: "Men's Fellowship",       desc: 'Regular fellowship and discipleship for the men of the church.' },
   { title: 'School of the Bible',    desc: 'Online Bible institute meeting every 3rd Saturday of the month. Registration required.' },
   { title: 'Vacation Bible School',  desc: 'Summer VBS for children ages 4–12. Registration required.' },
 ];
@@ -94,33 +53,146 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service schedule */}
+      {/* Clustered overview */}
       <SectionWrapper bg="cream">
         <AnimatedSection className="text-center mb-14">
-          <span className="section-label block mb-3">Weekly Schedule</span>
-          <h2 className="text-balance">Our Services</h2>
+          <span className="section-label block mb-3">Everything We Offer</span>
+          <h2 className="text-balance">Worship, Community & Events</h2>
+          <p className="font-sans text-church-gray mt-4 max-w-xl mx-auto">
+            All are welcome — whatever your age or background. Find your place at Victory Baptist Church.
+          </p>
         </AnimatedSection>
 
-        <AnimatedSection stagger className="space-y-4 max-w-3xl mx-auto">
-          {services.map((s) => (
-            <AnimatedItem key={s.title}>
-              <div className={`card-base p-6 flex flex-col sm:flex-row gap-5 items-start ${s.muted ? 'opacity-70' : ''}`}>
-                <div className="shrink-0 text-center sm:text-left sm:w-28">
-                  <span className="font-sans text-xs uppercase tracking-widest text-church-gold block">{s.day}</span>
-                  <span className="font-serif font-bold text-church-navy text-xl">{s.time}</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-base mb-1">{s.title}</h3>
-                  <p className="font-sans text-church-gray text-sm leading-relaxed">{s.desc}</p>
-                  <span className="font-sans text-xs text-church-olive font-medium mt-2 block">{s.sub}</span>
-                </div>
+        <AnimatedSection stagger className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          {/* Column 1 — Worship & Grow */}
+          <AnimatedItem>
+            <div className="card-base h-full flex flex-col overflow-hidden">
+              <div className="bg-church-navy px-6 py-4">
+                <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Grow in Faith</span>
+                <h3 className="font-serif text-white text-xl">Worship & Grow</h3>
               </div>
-            </AnimatedItem>
-          ))}
+              <ul className="flex-1 divide-y divide-gray-100">
+                {[
+                  { label: 'German Service',           note: 'Sun · 9:00 AM',             desc: 'A German-language service for our German-speaking friends — all are welcome. Hosted together with Wort Gottes Gemeinde.' },
+                  { label: 'Sunday Morning Service',  note: 'Sun · 10:45 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
+                  { label: 'Afternoon / Evening Service', note: null, desc: 'A deeper study of God\'s Word — teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
+                  { label: 'Wednesday Prayer Meeting',note: 'Wed · 7:00 PM',             desc: 'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.' },
+                  { label: 'Sunday School',           note: 'Sun · 10:20 AM',            desc: 'Bible classes for children and youth meeting before the main service for in-depth study and fellowship.' },
+                  { label: 'School of the Bible',     note: '3rd Saturday · Monthly',    desc: 'Online Bible institute open to all. Deepen your understanding of God\'s Word. Registration required.' },
+                  { label: 'Bible Conference',        note: 'Annual',                     desc: 'In-depth Bible preaching and teaching from guest speakers. A highlight of our church calendar each year.' },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-gold shrink-0" aria-hidden="true" />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-sans text-sm font-medium text-church-navy leading-snug">{item.label}</p>
+                      {'note' in item && item.note && (
+                        <p className="font-sans text-xs text-church-gold mt-0.5">{item.note}</p>
+                      )}
+                      {'schedule' in item && item.schedule && (
+                        <div className="mt-1.5 space-y-1">
+                          {item.schedule.map((s) => (
+                            <div key={s.period} className="flex items-center justify-between gap-3">
+                              <span className="font-sans text-xs text-church-gray">{s.period}</span>
+                              <span className="font-sans text-xs font-medium text-church-gold">{s.time}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      <p className="font-sans text-xs text-church-gray mt-1 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedItem>
+
+          {/* Column 2 — Connect & Belong */}
+          <AnimatedItem>
+            <div className="card-base h-full flex flex-col overflow-hidden">
+              <div className="bg-church-navyLight px-6 py-4">
+                <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Community</span>
+                <h3 className="font-serif text-white text-xl">Connect & Belong</h3>
+              </div>
+              <ul className="flex-1 divide-y divide-gray-100">
+                {[
+                  { label: 'Nursery / Childcare', note: 'Ages 0–3 · All Services',  desc: 'Loving childcare provided during every service so parents can worship freely.' },
+                  { label: 'Junior Church',        note: 'Ages 4–12 · Sun Morning',  desc: 'A dedicated programme for children running simultaneously with the morning service.' },
+                  { label: "Ladies' Fellowship",   note: 'Regular gatherings',        desc: 'Regular fellowship gatherings for the women of the church — encouragement, prayer, and sisterhood.' },
+                  { label: "Men's Fellowship",     note: 'Regular gatherings',        desc: 'Regular fellowship and discipleship for the men of the church.' },
+                  { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun. Registration required.' },
+                  { label: 'Summer Church Picnic', note: 'Whole Family · Annual',     desc: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.' },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-navyLight shrink-0" aria-hidden="true" />
+                    <div>
+                      <p className="font-sans text-sm font-medium text-church-navy leading-snug">{item.label}</p>
+                      <p className="font-sans text-xs text-church-gold mt-0.5">{item.note}</p>
+                      <p className="font-sans text-xs text-church-gray mt-1 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedItem>
+
+          {/* Column 3 — Special Events & Missions */}
+          <AnimatedItem>
+            <div className="card-base h-full flex flex-col overflow-hidden">
+              <div className="bg-church-gold px-6 py-4">
+                <span className="font-sans text-xs uppercase tracking-widest text-white/70 block mb-1">Throughout the Year</span>
+                <h3 className="font-serif text-white text-xl">Special Events & Missions</h3>
+              </div>
+              <ul className="flex-1 divide-y divide-gray-100">
+                {[
+                  { label: 'Resurrection Sunday',            note: 'April · Special Service',  desc: 'A powerful celebration of the risen Lord Jesus Christ — praise, Gospel preaching, and joy. Registration required.' },
+                  { label: 'International Musical Services', note: 'Seasonal',                  desc: 'Special services featuring music and worship reflecting the international diversity of our congregation. Registration required.' },
+                  { label: 'Missions Sundays',               note: 'Throughout the year',       desc: 'Dedicated Sundays for prayer, giving, and support for missionaries and Gospel outreach worldwide. Registration required.' },
+                  { label: 'Thanksgiving Celebration',       note: 'November',                  desc: 'Gathering together to give thanks to the Lord for His goodness, faithfulness, and grace. Registration required.' },
+                  { label: 'Christmas Eve Candlelight',      note: 'Dec 24 · Special Service',  desc: 'A beautiful evening of carols, candlelight, and the proclamation of Christ\'s birth. Registration required.' },
+                ].map((item) => (
+                  <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-gold shrink-0" aria-hidden="true" />
+                    <div>
+                      <p className="font-sans text-sm font-medium text-church-navy leading-snug">{item.label}</p>
+                      <p className="font-sans text-xs text-church-gold mt-0.5">{item.note}</p>
+                      <p className="font-sans text-xs text-church-gray mt-1 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedItem>
+
         </AnimatedSection>
+
+        {/* Registration hint box */}
+        <AnimatedSection delay={0.4} className="mt-10">
+          <div className="rounded-2xl border border-church-navy/15 bg-white px-6 py-5 flex flex-col sm:flex-row items-start gap-4 max-w-3xl mx-auto">
+            <div className="w-10 h-10 rounded-xl bg-church-navy/8 flex items-center justify-center shrink-0">
+              <RiInformationLine size={20} className="text-church-navy" aria-hidden="true" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-sans text-sm font-semibold text-church-navy mb-1">Registration</p>
+              <p className="font-sans text-sm text-church-gray leading-relaxed">
+                Regular Sunday services are <span className="font-medium text-church-navy">walk-in — no registration needed</span>. Just come as you are.
+                Some special events and programmes require prior registration. Please contact us if you would like to attend.
+              </p>
+            </div>
+            <a
+              href="/contact"
+              className="shrink-0 inline-flex items-center gap-1.5 font-sans text-sm font-medium text-church-gold hover:text-church-navy transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded whitespace-nowrap"
+            >
+              <RiMailLine size={15} aria-hidden="true" />
+              Contact Us
+            </a>
+          </div>
+        </AnimatedSection>
+
       </SectionWrapper>
 
-      {/* Ministries */}
+      {/* Ministries — ausgeblendet, bei Bedarf false -> true */}
+      {false && (
       <SectionWrapper bg="white">
         <AnimatedSection className="text-center mb-14">
           <span className="section-label block mb-3">Get Involved</span>
@@ -142,9 +214,10 @@ export default function ServicesPage() {
           ))}
         </AnimatedSection>
       </SectionWrapper>
+      )}
 
       {/* Location */}
-      <SectionWrapper bg="cream">
+      <SectionWrapper bg="white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <AnimatedSection>
             <span className="section-label block mb-3">Where We Meet</span>
@@ -170,22 +243,36 @@ export default function ServicesPage() {
             </Button>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <div
-              className="rounded-2xl overflow-hidden h-80 bg-church-navy/8 flex items-center justify-center border border-gray-100"
-              role="img"
-              aria-label="Map: Schulze-Delitzsch-Straße 30, 70565 Stuttgart"
-            >
-              <div className="text-center">
-                <RiMapPin2Line size={48} className="mx-auto mb-4 text-church-gold/60" aria-hidden="true" />
-                <p className="font-sans text-sm font-medium text-church-navy">Schulze-Delitzsch-Straße 30</p>
-                <p className="font-sans text-xs text-church-gray/60 mt-1">70565 Stuttgart · Vaihingen</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden h-80 border border-gray-100 shadow-sm">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190.06953036183506!2d9.125642220455653!3d48.720888313487606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799dde4d94f19b9%3A0x285edf7730cde06b!2sVictory%20Baptist%20Church!5e0!3m2!1sde!2sde!4v1787648863858!5m2!1sde!2sde"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Victory Baptist Church Stuttgart — Karte"
+              />
             </div>
           </AnimatedSection>
         </div>
       </SectionWrapper>
 
       <BibleVerseSection />
+
+      {/* Photo Gallery */}
+      <SectionWrapper bg="white">
+        <AnimatedSection className="text-center mb-14">
+          <span className="section-label block mb-3">Life at Victory Baptist</span>
+          <h2 className="text-balance">Our Church in Pictures</h2>
+          <p className="font-sans text-church-gray mt-4 max-w-xl mx-auto">
+            A glimpse into our Sunday services, events, and community life.
+          </p>
+        </AnimatedSection>
+
+        <GallerySection />
+      </SectionWrapper>
 
       {/* FAQ */}
       <SectionWrapper bg="cream">

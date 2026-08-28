@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiWhatsappLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 
 const navLinks = [
@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'Sermons',      href: '/sermons' },
   { label: 'Our Beliefs',  href: '/about' },
   { label: 'Way to Heaven', href: '/way-to-heaven' },
+  { label: 'Offering',     href: '/giving' },
   { label: 'Contact',      href: '/contact' },
 ];
 
@@ -46,7 +47,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded">
           <span className="font-serif font-bold text-lg text-church-navy">
-            Victory Baptist Church
+            Victory <span className="text-church-gold font-sans font-normal">✝</span> Baptist Church
           </span>
           <span className="font-sans text-xs text-church-gold tracking-widest uppercase">Stuttgart</span>
         </Link>
@@ -73,8 +74,18 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* CTA */}
-        <div className="hidden md:block">
+        {/* CTA buttons */}
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://wa.me/491773373200"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-church-navy text-white font-sans font-medium text-sm rounded-full px-4 py-2 hover:bg-church-navyLight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <RiWhatsappLine size={16} aria-hidden="true" />
+            Chat with us
+          </a>
           <Button as="link" href="/contact" variant="primary" size="sm">
             Contact
           </Button>

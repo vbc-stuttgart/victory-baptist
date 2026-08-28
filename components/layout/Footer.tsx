@@ -6,13 +6,14 @@ const quickLinks = [
   { label: 'Sermons',       href: '/sermons' },
   { label: 'Our Beliefs',   href: '/about' },
   { label: 'Way to Heaven', href: '/way-to-heaven' },
+  { label: 'Offering',      href: '/giving' },
   { label: 'Contact',       href: '/contact' },
 ];
 
 const socialLinks = [
-  { icon: RiFacebookFill, label: 'Facebook',  href: '#' },
-  { icon: RiInstagramLine, label: 'Instagram', href: '#' },
-  { icon: RiYoutubeFill,  label: 'YouTube',   href: '#' },
+  { icon: RiFacebookFill, label: 'Facebook',  href: 'https://www.facebook.com/vbc.de/' },
+  { icon: RiInstagramLine, label: 'Instagram', href: 'https://www.instagram.com/vbc.stuttgart/' },
+  { icon: RiYoutubeFill,  label: 'YouTube',   href: 'https://www.youtube.com/@VbcStuttgart' },
 ];
 
 export default function Footer() {
@@ -24,7 +25,7 @@ export default function Footer() {
           {/* Col 1: Logo + tagline */}
           <div>
             <Link href="/" className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded">
-              <span className="font-serif font-bold text-xl text-white block">Victory Baptist Church</span>
+              <span className="font-serif font-bold text-xl text-white block">Victory <span className="text-church-gold font-sans font-normal">✝</span> Baptist Church</span>
               <span className="font-sans text-xs text-church-gold tracking-widest uppercase mt-1 block">Stuttgart, Germany</span>
             </Link>
             <p className="font-sans text-sm text-white/60 mt-4 leading-relaxed">
@@ -82,10 +83,10 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <RiMailLine className="shrink-0 mt-0.5 text-church-gold" size={16} aria-hidden="true" />
                 <a
-                  href="mailto:info@victorybaptist-stuttgart.de"
+                  href="mailto:victory.stuttgart@gmail.com"
                   className="hover:text-church-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
                 >
-                  info@victorybaptist-stuttgart.de
+                  victory.stuttgart@gmail.com
                 </a>
               </li>
             </ul>
@@ -113,11 +114,11 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <Link href="/impressum" className="font-sans text-white/40 hover:text-church-gold text-xs transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-church-gold rounded">
-              Impressum
+              Legal Notice
             </Link>
             <span className="text-white/20 text-xs">·</span>
             <Link href="/datenschutz" className="font-sans text-white/40 hover:text-church-gold text-xs transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-church-gold rounded">
-              Datenschutz
+              Privacy Notice
             </Link>
           </div>
         </div>

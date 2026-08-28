@@ -89,12 +89,11 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <blockquote className="bible-quote text-lg md:text-xl leading-relaxed mb-4" cite="Romans 1:16">
-              For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation
-              to every one that believeth; to the Jew first, and also to the Greek.
+            <blockquote className="bible-quote text-lg md:text-xl leading-relaxed mb-4" cite="John: Chapter 14, Verse 6">
+              Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me
             </blockquote>
             <footer className="font-sans text-sm uppercase tracking-widest text-church-gold mt-3 mb-8">
-              <cite>Romans 1:16 (KJV)</cite>
+              <cite>John: Chapter 14, Verse 6</cite>
             </footer>
 
             <div className="bg-white rounded-2xl p-6 shadow-sm">
@@ -118,10 +117,15 @@ export default function AboutPage() {
         </AnimatedSection>
 
         <AnimatedSection stagger className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {beliefs.map((belief) => (
+          {beliefs.map((belief, index) => (
             <AnimatedItem key={belief.title}>
               <div className="card-base p-7 h-full">
-                <div className="w-8 h-1 bg-church-gold rounded-full mb-5" aria-hidden="true" />
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="font-sans text-xs font-bold text-church-gold bg-church-gold/10 rounded-full w-7 h-7 flex items-center justify-center shrink-0">
+                    {index + 1}
+                  </span>
+                  <div className="flex-1 h-px bg-church-gold/30 rounded-full" aria-hidden="true" />
+                </div>
                 <h3 className="text-base mb-3 leading-snug">{belief.title}</h3>
                 <p className="font-sans text-church-gray text-sm leading-relaxed">{belief.text}</p>
               </div>

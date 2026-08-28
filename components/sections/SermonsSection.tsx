@@ -1,99 +1,106 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
-import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 import Link from 'next/link';
-import Image from 'next/image';
-import { RiPlayCircleLine, RiArrowRightLine, RiMicLine } from 'react-icons/ri';
+import { RiArrowRightLine } from 'react-icons/ri';
 
-const blurDataURL =
-  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoH' +
-  'BwYIDAoMCwsKCwsNCxAQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/wAARCAAIAAoDASIAAhEBAxEB/8QAFQ' +
-  'ABAQAAAAAAAAAAAAAAAAAACAT/xAAcEAABBAMBAAAAAAAAAAAAAAAAAgEDBBESIf/EABQBAQAAAAAAAAAAAAAAAAAA' +
-  'AAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCyocrFHMTdkq4hktAABTH4AAB//9k=';
+const ARTWORK = 'https://pbcdn1.podbean.com/imglogo/image-logo/16882650/Logo_Podcast_01_bv9d9d.jpeg';
 
-const sermons = [
-  {
-    thumbnail:   '/images/sermon-1.jpg',
-    date:        'July 21, 2024',
-    title:       'The Peace of God',
-    scripture:   'Philippians 4:7',
-    pastor:      'Pastor John Smith',
-    description: 'In a world full of anxiety and fear, God offers a peace that passes all human understanding. What does that mean for our daily lives?',
-  },
-  {
-    thumbnail:   '/images/sermon-2.jpg',
-    date:        'July 14, 2024',
-    title:       'Trust in Dark Times',
-    scripture:   'Psalm 23',
-    pastor:      'Pastor John Smith',
-    description: 'The 23rd Psalm may be the most beloved in the Bible — but what does it truly mean when life grows dark? A message of God\'s faithful care.',
-  },
-  {
-    thumbnail:   '/images/sermon-3.jpg',
-    date:        'July 7, 2024',
-    title:       "The Lord's Prayer — Rediscovered",
-    scripture:   'Matthew 6:9–13',
-    pastor:      'Pastor John Smith',
-    description: 'Almost everyone knows the Lord\'s Prayer — but how do we truly pray it? A journey through the greatest prayer school in the Bible.',
-  },
-];
+function between(xml: string, open: string, close: string): string {
+  const i = xml.indexOf(open);
+  if (i === -1) return '';
+  const j = xml.indexOf(close, i + open.length);
+  if (j === -1) return '';
+  return xml.slice(i + open.length, j).trim();
+}
 
-export default function SermonsSection() {
+async function getLatestEpisode() {
+  try {
+    const res = await fetch('https://feed.podbean.com/parole-de-vie/feed.xml', {
+      next: { revalidate: 3600 },
+    });
+    if (!res.ok) return null;
+    const xml = await res.text();
+    const items = xml.match(/<item>[\s\S]*?<\/item>/g) ?? [];
+    const item = items[0];
+    if (!item) return null;
+    const title    = between(item, '<title>', '</title>');
+    const pubDate  = between(item, '<pubDate>', '</pubDate>');
+    const enclosure = between(item, '<enclosure ', '/>');
+    const audioUrl  = between(enclosure, 'url="', '"');
+    const audioType = between(enclosure, 'type="', '"') || 'audio/mpeg';
+    const durStr   = between(item, '<itunes:duration>', '</itunes:duration>');
+    const descRaw  = between(between(item, '<description>', '</description>'), '<![CDATA[', ']]>');
+    const preacher = descRaw.replace(/<[^>]+>/g, '').trim();
+    const date = pubDate
+      ? new Date(pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+      : '';
+    const duration = durStr ? `${Math.floor(parseInt(durStr, 10) / 60)} min` : '';
+    return { title, date, audioUrl, audioType, preacher, duration };
+  } catch {
+    return null;
+  }
+}
+
+export default async function SermonsSection() {
+  const latest = await getLatestEpisode();
+
   return (
     <SectionWrapper id="sermons" bg="cream">
-      <AnimatedSection className="text-center mb-14">
+      <AnimatedSection className="text-center mb-12">
         <span className="section-label block mb-3">Hear God&apos;s Word</span>
         <h2 className="text-balance">Sermons & Media</h2>
-        <p className="font-sans text-church-gray mt-4 max-w-xl mx-auto text-base md:text-lg">
-          Audio sermons available on podcast · Video recordings on YouTube · Live streaming every Sunday.
-        </p>
       </AnimatedSection>
 
-      <AnimatedSection stagger className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {sermons.map((sermon) => (
-          <AnimatedItem key={sermon.title}>
-            <article className="card-base overflow-hidden group">
-              {/* Thumbnail */}
-              <div className="relative h-48 bg-church-navy/10">
-                <Image
-                  src={sermon.thumbnail}
-                  alt={`Sermon: ${sermon.title} — ${sermon.scripture}`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  placeholder="blur"
-                  blurDataURL={blurDataURL}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-church-navy/30 group-hover:bg-church-navy/20 transition-colors duration-300" aria-hidden="true" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full bg-church-gold flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200" aria-hidden="true">
-                    <RiPlayCircleLine size={28} className="text-white" />
-                  </div>
-                </div>
-                <span className="absolute top-3 left-3 bg-white/90 text-church-navy font-sans text-xs px-3 py-1 rounded-full">
-                  {sermon.date}
-                </span>
-              </div>
+      {latest && (
+        <AnimatedSection className="max-w-3xl mx-auto mb-10">
+          <div className="bg-church-navy rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row gap-5 items-start">
 
-              {/* Content */}
-              <div className="p-6">
-                <span className="font-sans text-xs uppercase tracking-widest text-church-gold mb-2 block">
-                  {sermon.scripture}
-                </span>
-                <h3 className="text-base mb-2 leading-snug">{sermon.title}</h3>
-                <p className="font-sans text-church-gray text-sm leading-relaxed mb-3 line-clamp-2">
-                  {sermon.description}
+            {/* Artwork */}
+            <div className="shrink-0 w-full sm:w-32 h-40 sm:h-32 rounded-xl overflow-hidden bg-church-navy/60">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={ARTWORK}
+                alt="The Bible Message podcast"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Info + player */}
+            <div className="flex-1 min-w-0 flex flex-col justify-between gap-3">
+              <div>
+                <p className="font-sans text-church-gold text-xs uppercase tracking-widest mb-1">
+                  Latest Sermon
                 </p>
-                <div className="flex items-center gap-1.5 text-church-gray/60">
-                  <RiMicLine size={12} aria-hidden="true" />
-                  <p className="font-sans text-xs">{sermon.pastor}</p>
+                <h3 className="font-serif text-white text-lg sm:text-xl leading-tight">
+                  {latest.title}
+                </h3>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-1">
+                  {latest.preacher && (
+                    <p className="font-sans text-white/50 text-xs">{latest.preacher}</p>
+                  )}
+                  {latest.date && (
+                    <p className="font-sans text-white/40 text-xs">{latest.date}</p>
+                  )}
+                  {latest.duration && (
+                    <p className="font-sans text-church-gold/70 text-xs">{latest.duration}</p>
+                  )}
                 </div>
               </div>
-            </article>
-          </AnimatedItem>
-        ))}
-      </AnimatedSection>
+              <audio
+                controls
+                className="w-full"
+                src={latest.audioUrl}
+                preload="none"
+                aria-label={latest.title}
+              >
+                <source src={latest.audioUrl} type={latest.audioType} />
+              </audio>
+            </div>
+          </div>
+        </AnimatedSection>
+      )}
 
-      <AnimatedSection delay={0.4} className="text-center mt-10">
+      <AnimatedSection delay={0.3} className="text-center">
         <Link
           href="/sermons"
           className="inline-flex items-center gap-2 font-sans font-medium text-church-gold hover:text-church-navy transition-colors duration-200 text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"

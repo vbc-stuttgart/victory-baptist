@@ -6,38 +6,6 @@ import { RiArrowRightLine } from 'react-icons/ri';
 
 const events = [
   {
-    day:         'Apr',
-    month:       '2026',
-    title:       'Resurrection Sunday',
-    description: 'A special celebration of the risen Lord Jesus Christ. Join us for a powerful service of praise and Gospel preaching.',
-    tag:         'Special Service',
-    tagColor:    'gold' as const,
-  },
-  {
-    day:         'Jul',
-    month:       '2026',
-    title:       'Vacation Bible School',
-    description: 'Summer VBS for children ages 4–12. A week of Bible lessons, songs, games, and fun. Registration required.',
-    tag:         'Children',
-    tagColor:    'olive' as const,
-  },
-  {
-    day:         'Aug',
-    month:       '2026',
-    title:       'Summer Church Grill Picnic',
-    description: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.',
-    tag:         'Fellowship',
-    tagColor:    'olive' as const,
-  },
-  {
-    day:         'TBA',
-    month:       '2026',
-    title:       'Bible Conference',
-    description: 'In-depth Bible preaching and teaching from guest speakers. A highlight of our church calendar each year.',
-    tag:         'Conference',
-    tagColor:    'navy' as const,
-  },
-  {
     day:         '3rd Sat',
     month:       'Monthly',
     title:       'School of the Bible',
@@ -46,10 +14,18 @@ const events = [
     tagColor:    'gold' as const,
   },
   {
-    day:         'Dec',
+    day:         'Nov',
+    month:       '2026',
+    title:       'Thanksgiving Day Celebration',
+    description: 'Join us as we gather to give thanks to the Lord for His goodness and faithfulness. A special service of praise, prayer, and the Word.',
+    tag:         'Special Service',
+    tagColor:    'gold' as const,
+  },
+  {
+    day:         'Dec 24',
     month:       '2026',
     title:       "Christmas Eve Candlelight Service",
-    description: 'A beautiful evening service of carols, candlelight, and the proclamation of Christ\'s birth.',
+    description: "A beautiful evening service of carols, candlelight, and the proclamation of Christ's birth.",
     tag:         'Special Service',
     tagColor:    'gold' as const,
   },
@@ -97,16 +73,14 @@ export default function EventsSection() {
         ))}
       </AnimatedSection>
 
-      <AnimatedSection delay={0.4} className="mt-8">
-        <div className="bg-church-cream rounded-xl px-6 py-4 text-center">
-          <p className="font-sans text-church-gray text-sm">
-            Regular Sunday services and special Sunday services require <strong>no registration</strong>.
-            Special events (VBS, Grill, School of the Bible, etc.) require advance registration —
-            <Link href="/contact" className="text-church-navy underline underline-offset-2 hover:text-church-gold transition-colors ml-1">
-              contact us to sign up.
-            </Link>
-          </p>
-        </div>
+      <AnimatedSection delay={0.4} className="text-center mt-8">
+        <Link
+          href="/services"
+          className="inline-flex items-center gap-2 font-sans font-medium text-church-gold hover:text-church-navy transition-colors duration-200 text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
+        >
+          View Special Services & Events in Detail
+          <RiArrowRightLine size={20} aria-hidden="true" />
+        </Link>
       </AnimatedSection>
     </SectionWrapper>
   );

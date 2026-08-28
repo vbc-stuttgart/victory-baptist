@@ -63,9 +63,9 @@ export default function HeroSection() {
         <motion.blockquote
           {...fadeUp(0.55)}
           className="font-lora italic text-white/65 text-sm mt-4"
-          cite="John 3:16"
+          cite="Romans: Chapter 12, Verse 10"
         >
-          &ldquo;For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.&rdquo; — John 3:16
+          &ldquo;Be kindly affectioned one to another with brotherly love; in honour preferring one another.&rdquo; — Romans: Chapter 12, Verse 10
         </motion.blockquote>
 
         <motion.div

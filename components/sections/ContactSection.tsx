@@ -2,7 +2,7 @@
 
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { RiMapPin2Line, RiTimeLine, RiMailLine, RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiCarLine, RiBusLine } from 'react-icons/ri';
+import { RiMapPin2Line, RiTimeLine, RiMailLine, RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiCarLine, RiBusLine, RiPhoneLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import { useState, FormEvent } from 'react';
 
@@ -11,19 +11,39 @@ const inputClass =
   'focus:outline-none focus:border-church-navy focus:ring-2 focus:ring-church-gold/30 transition-all duration-200 min-h-[52px]';
 
 const socialLinks = [
-  { icon: RiFacebookFill, label: 'Facebook',  href: '#' },
-  { icon: RiInstagramLine, label: 'Instagram', href: '#' },
-  { icon: RiYoutubeFill,  label: 'YouTube',   href: '#' },
+  { icon: RiFacebookFill, label: 'Facebook',  href: 'https://www.facebook.com/vbc.de/' },
+  { icon: RiInstagramLine, label: 'Instagram', href: 'https://www.instagram.com/vbc.stuttgart/' },
+  { icon: RiYoutubeFill,  label: 'YouTube',   href: 'https://www.youtube.com/@VbcStuttgart' },
 ];
+
+// Formspree endpoint — replace XXXXXXXX with your form ID from formspree.io
+const FORMSPREE_URL = 'https://formspree.io/f/XXXXXXXX';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading,   setLoading]   = useState(false);
+  const [error,     setError]     = useState('');
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => { setLoading(false); setSubmitted(true); }, 800);
+    setError('');
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method:  'POST',
+        headers: { 'Accept': 'application/json' },
+        body:    new FormData(e.currentTarget),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError('Something went wrong. Please try again or email us directly.');
+      }
+    } catch {
+      setError('Could not send message. Please check your connection and try again.');
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -32,7 +52,7 @@ export default function ContactSection() {
         <span className="section-label block mb-3">We&apos;d Love to Hear from You</span>
         <h2 className="text-balance">Get in Touch</h2>
         <p className="font-sans text-church-gray mt-4 max-w-xl mx-auto text-base md:text-lg">
-          Questions, prayer requests, or just a hello — reach out any time.
+          Questions, prayer requests, or just a hello — reach out any time. Join us and experience victory as you grow closer to God!
         </p>
       </AnimatedSection>
 
@@ -98,10 +118,21 @@ export default function ContactSection() {
                 />
               </div>
 
+              <p className="font-sans text-xs text-church-gray leading-relaxed">
+                Please refer to our{' '}
+                <a href="/datenschutz" className="text-church-gold underline underline-offset-2 hover:text-church-navy transition-colors">
+                  Privacy Notice
+                </a>
+                {' '}for information on how your personal data is processed in connection with this contact form.
+              </p>
+
               <Button type="submit" variant="primary" size="lg" fullWidth disabled={loading} aria-label="Send message">
                 {loading ? 'Sending…' : 'Send Message'}
               </Button>
 
+              {error && (
+                <p className="font-sans text-xs text-red-600 text-center" role="alert">{error}</p>
+              )}
               <p className="font-sans text-xs text-church-gray/60 text-center">
                 Your information is kept private and will never be shared.
               </p>
@@ -159,15 +190,30 @@ export default function ContactSection() {
 
               <li className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+                  <RiPhoneLine size={18} className="text-church-gold" aria-hidden="true" />
+                </div>
+                <div>
+                  <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Phone / WhatsApp</span>
+                  <a
+                    href="tel:+491773373200"
+                    className="font-sans text-white/85 text-sm hover:text-church-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
+                  >
+                    +49 177 3373200
+                  </a>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
                   <RiMailLine size={18} className="text-church-gold" aria-hidden="true" />
                 </div>
                 <div>
                   <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Email</span>
                   <a
-                    href="mailto:info@victorybaptist-stuttgart.de"
+                    href="mailto:victory.stuttgart@gmail.com"
                     className="font-sans text-white/85 text-sm hover:text-church-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
                   >
-                    info@victorybaptist-stuttgart.de
+                    victory.stuttgart@gmail.com
                   </a>
                 </div>
               </li>

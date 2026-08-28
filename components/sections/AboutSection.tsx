@@ -61,12 +61,11 @@ export default function AboutSection() {
               &ldquo;
             </span>
 
-            <blockquote className="bible-quote relative z-10 text-lg md:text-xl leading-relaxed" cite="Romans 1:16">
-              For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation
-              to every one that believeth; to the Jew first, and also to the Greek.
+            <blockquote className="bible-quote relative z-10 text-lg md:text-xl leading-relaxed" cite="John: ​Chapter 8, Verse 12">
+              Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.
             </blockquote>
             <footer className="mt-4 font-sans text-sm uppercase tracking-widest text-church-gold">
-              <cite>Romans 1:16 (KJV)</cite>
+              <cite>John: ​Chapter 8, Verse 12</cite>
             </footer>
 
             <div className="mt-8 pt-8 border-t border-church-gold/20">
