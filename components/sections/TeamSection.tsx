@@ -38,7 +38,7 @@ export default function TeamSection() {
             <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-4">Senior Pastor</span>
             <div className="w-10 h-0.5 bg-church-gold/40 mb-4 mx-auto md:mx-0" />
             <h3 className="font-serif text-2xl text-church-navy mb-1">Christelle Jobway</h3>
-            <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-4">First Lady</span>
+            <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-4"></span>
             <p className="font-sans text-church-gray text-sm leading-relaxed">
               Married in 2007, Patrick and Christelle answered God&apos;s call to bring the Gospel to the international community of Germany — serving faithfully at Victory Baptist Church Stuttgart.
             </p>
