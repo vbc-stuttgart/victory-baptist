@@ -17,7 +17,7 @@ const socialLinks = [
 ];
 
 // Formspree endpoint — replace XXXXXXXX with your form ID from formspree.io
-const FORMSPREE_URL = 'https://formspree.io/f/XXXXXXXX';
+const FORMSPREE_URL = 'https://formspree.io/f/mzebbayb';
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
