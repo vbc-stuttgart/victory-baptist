@@ -12,20 +12,29 @@ type MediaItem = {
 
 const mediaItems: MediaItem[] = [
   { type: 'image', src: '/images/Sunday Morning Service.jpg',   alt: 'Sunday Morning Service'   },
+  { type: 'image', src: '/images/pastor_jobway.png',   alt: 'Pastor'   },
+  { type: 'image', src: '/images/House_of_God_2.jpg',           alt: 'House of God'             },  
   { type: 'video', src: '/images/Prayer1.m4v',                  alt: 'Prayer Meeting'           },
   { type: 'image', src: '/images/Children_Ministry.jpg',        alt: 'Children Ministry'        },
+  { type: 'image', src: '/images/CFC1.png',                     alt: 'Church Fellowship'        },
   { type: 'image', src: '/images/Children_Ministry_2.jpg',      alt: 'Children Ministry'        },
+  { type: 'image', src: '/images/Christmas3.png',               alt: 'Christmas Service'        },
   { type: 'image', src: '/images/Sunday_School.jpg',            alt: 'Sunday School'            },
   { type: 'image', src: '/images/Sunday School — Children.jpg', alt: 'Sunday School'            },
+  { type: 'image', src: '/images/community2.png',               alt: 'Church Community'         },
+  { type: 'image', src: '/images/Christmas1.png',               alt: 'Christmas Service'        },
+  { type: 'image', src: '/images/Sunday_service.png',           alt: 'Sunday Service'           },
   { type: 'image', src: '/images/Sunday School — Children_2.jpg', alt: 'Sunday School'          },
-  { type: 'image', src: '/images/Sunday School — Children_3.jpg', alt: 'Sunday School'          },
   { type: 'video', src: '/images/Singing_1.m4v',                alt: 'Congregational Singing'   },
   { type: 'image', src: '/images/Thanks_Giving_1.jpg',          alt: 'Thanksgiving Celebration' },
+  { type: 'image', src: '/images/Sunday School — Children_3.jpg', alt: 'Sunday School'          },
   { type: 'image', src: '/images/Thanks_Giving_2.jpg',          alt: 'Thanksgiving Celebration' },
   { type: 'image', src: '/images/Thanks_Giving_3.jpg',          alt: 'Thanksgiving Celebration' },
+  { type: 'image', src: '/images/JBC1.png',                     alt: 'Church Service'           },
   { type: 'image', src: '/images/Thanks_Giving_4.jpg',          alt: 'Thanksgiving Celebration' },
   { type: 'image', src: '/images/Thanks_Giving_5.jpg',          alt: 'Thanksgiving Celebration' },
   { type: 'image', src: '/images/Thanks_Giving_6.jpg',          alt: 'Thanksgiving Celebration' },
+  { type: 'video', src: '/images/Prayer2.m4v',                  alt: 'Prayer'                   },
   { type: 'image', src: '/images/Thanks_Giving_7.jpg',          alt: 'Thanksgiving Celebration' },
   { type: 'image', src: '/images/Thanks_Giving_8.jpg',          alt: 'Thanksgiving Celebration' },
   { type: 'image', src: '/images/Thanks_Giving_9.jpg',          alt: 'Thanksgiving Celebration' },
@@ -33,18 +42,10 @@ const mediaItems: MediaItem[] = [
   { type: 'image', src: '/images/Child_Care.jpg',               alt: 'Childcare'                },
   { type: 'image', src: '/images/Craftings.jpg',                alt: 'Church Activities'        },
   { type: 'image', src: '/images/House_Of_God.jpg',             alt: 'House of God'             },
-  { type: 'image', src: '/images/House_of_God_2.jpg',           alt: 'House of God'             },
   { type: 'image', src: '/images/Community1.png',               alt: 'Church Community'         },
-  { type: 'image', src: '/images/community2.png',               alt: 'Church Community'         },
-  { type: 'image', src: '/images/Christmas1.png',               alt: 'Christmas Service'        },
   { type: 'image', src: '/images/Christmas2.png',               alt: 'Christmas Service'        },
-  { type: 'image', src: '/images/Christmas3.png',               alt: 'Christmas Service'        },
   { type: 'image', src: '/images/Junior_School1.png',           alt: 'Junior Church'            },
-  { type: 'image', src: '/images/JBC1.png',                     alt: 'Church Service'           },
-  { type: 'image', src: '/images/CFC1.png',                     alt: 'Church Fellowship'        },
-  { type: 'image', src: '/images/Sunday_service.png',           alt: 'Sunday Service'           },
   { type: 'image', src: '/images/VBC.jpg',                      alt: 'Victory Baptist Church'   },
-  { type: 'video', src: '/images/Prayer2.m4v',                  alt: 'Prayer'                   },
   { type: 'video', src: '/images/Prayer3.m4v',                  alt: 'Prayer'                   },
 ];
 
@@ -87,7 +88,7 @@ export default function GallerySection() {
                 src={item.src}
                 alt={item.alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width:768px) 50vw, 33vw"
               />
             ) : (
