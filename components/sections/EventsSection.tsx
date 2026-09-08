@@ -14,7 +14,7 @@ const events = [
     tagColor:    'gold' as const,
   },
   {
-    day:         'Nov',
+    day:         'Nov 26th',
     month:       '2026',
     title:       'Thanksgiving Day Celebration',
     description: 'Join us as we gather to give thanks to the Lord for His goodness and faithfulness. A special service of praise, prayer, and the Word.',
