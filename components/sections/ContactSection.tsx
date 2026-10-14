@@ -184,7 +184,22 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Public Transport</span>
-                  <p className="font-sans text-white/85 text-sm">S-Bahn / U-Bahn: <strong>Lapp Kabel</strong></p>
+                  <p className="font-sans text-white/85 text-sm">S-Bahn-Stop: <strong>Vaihingen</strong></p>
+                  <p className="font-sans text-white/85 text-sm">U-Bahn-Stop: <strong>Lapp Kabel</strong></p>
+                </div>
+              </li>
+
+              <li>
+                <div className="rounded-xl bg-church-gold/20 border border-church-gold/40 px-4 py-3 flex items-center gap-3">
+                  <RiCarLine size={18} className="text-church-gold shrink-0" aria-hidden="true" />
+                  <p className="font-sans text-sm text-white/90">
+                    <span className="font-semibold text-white">Do you need a ride?</span>{' '}
+                    Please{' '}
+                    <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
+                      contact us
+                    </a>
+                    {' '}— we&apos;ll be happy to help.
+                  </p>
                 </div>
               </li>
 

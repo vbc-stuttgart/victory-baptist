@@ -72,7 +72,7 @@ export default function ServicesSection() {
                   {service.description}
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <span className="font-sans text-xs text-church-olive font-medium">{service.tag}</span>
+                  <span className="font-sans text-xs text-church-olive font-medium border border-church-olive/30 rounded px-2 py-0.5 tracking-wide whitespace-nowrap">{service.tag}</span>
                 </div>
               </article>
             </AnimatedItem>
@@ -82,16 +82,17 @@ export default function ServicesSection() {
 
       {/* German Service — separate box */}
       <AnimatedSection delay={0.3} className="mb-10">
-        <div className="border border-church-navy/20 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white max-w-2xl mx-auto">
-          <div className="w-10 h-10 rounded-xl bg-church-navy/8 flex items-center justify-center shrink-0">
-            <RiGlobalLine size={20} className="text-church-navy" aria-hidden="true" />
+        <div className="rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-slate-100 border border-slate-200 max-w-2xl mx-auto">
+          <div className="w-10 h-10 rounded-xl bg-slate-200 flex items-center justify-center shrink-0">
+            <RiGlobalLine size={20} className="text-slate-500" aria-hidden="true" />
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-2 mb-1">
-              <h3 className="font-serif font-bold text-church-navy text-base">Deutscher Gottesdienst</h3>
-              <span className="font-sans text-xs uppercase tracking-widest bg-church-gold/15 text-church-gold px-3 py-1 rounded-full">Sunday · 9:00 AM</span>
+              <h3 className="font-serif font-bold text-slate-700 text-base">Deutscher Gottesdienst</h3>
+              <span className="font-sans text-xs uppercase tracking-widest bg-slate-200 text-slate-500 px-3 py-1 rounded-full">Sunday · 9:00 AM</span>
+              <span className="font-sans text-xs text-slate-400 italic">Wort Gottes Gemeinde</span>
             </div>
-            <p className="font-sans text-church-gray text-sm leading-relaxed">
+            <p className="font-sans text-slate-500 text-sm leading-relaxed">
               Ein deutschsprachiger Gottesdienst für alle deutschsprachigen Freunde — herzlich willkommen!
             </p>
           </div>
@@ -99,7 +100,7 @@ export default function ServicesSection() {
             href="http://www.wgg-baptisten.de/"
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-1.5 font-sans text-sm font-medium text-church-gold hover:text-church-navy transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded whitespace-nowrap"
+            className="shrink-0 inline-flex items-center gap-1.5 font-sans text-sm font-medium text-church-navy hover:text-church-navyLight transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-navy rounded whitespace-nowrap"
           >
             Wort Gottes Gemeinde
             <RiExternalLinkLine size={14} aria-hidden="true" />

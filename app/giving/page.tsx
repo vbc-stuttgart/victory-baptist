@@ -3,6 +3,7 @@ import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import BibleVerseSection from '@/components/sections/BibleVerseSection';
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Offering',
@@ -51,10 +52,12 @@ export default function GivingPage() {
           {/* Bank details card */}
           <AnimatedSection delay={0.2}>
             <div className="bg-church-navy text-white rounded-2xl p-8 md:p-10">
-              <h3 className="font-serif font-semibold text-xl text-white mb-2">Bank Transfer</h3>
-              <p className="font-sans text-white/60 text-sm mb-8">
-                Please use the details below to make a donation by bank transfer.
-              </p>
+              <div className="flex flex-col md:flex-row md:items-start gap-8">
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-serif font-semibold text-xl text-white mb-2">Bank Transfer</h3>
+                  <p className="font-sans text-white/60 text-sm mb-8">
+                    Please use the details below to make a donation by bank transfer.
+                  </p>
 
               <div className="space-y-5">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 border-b border-white/10 pb-5">
@@ -99,6 +102,24 @@ export default function GivingPage() {
                 Please always include <strong className="text-white/70">VBC</strong> as the payment
                 reference so we can allocate your gift correctly. Thank you for your generosity!
               </p>
+                </div>
+
+                {/* QR Code */}
+                <div className="shrink-0 flex flex-col items-center gap-3 md:pt-2">
+                  <div className="bg-white rounded-xl p-3 shadow-md">
+                    <Image
+                      src="/images/qr_Code.jpeg"
+                      alt="QR Code for bank transfer"
+                      width={180}
+                      height={180}
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <p className="font-sans text-xs text-white/50 text-center max-w-[180px] leading-snug">
+                    Scan to donate<br />directly via bank transfer
+                  </p>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
 

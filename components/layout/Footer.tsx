@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiMapPin2Line, RiTimeLine, RiMailLine } from 'react-icons/ri';
+import { RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiMapPin2Line, RiTimeLine, RiMailLine, RiWhatsappLine } from 'react-icons/ri';
 
 const quickLinks = [
   { label: 'Services',      href: '/services' },
@@ -91,7 +91,22 @@ export default function Footer() {
               </li>
             </ul>
 
-            <div className="flex gap-4 mt-6" role="list" aria-label="Social Media">
+            <div className="flex items-center gap-2 mt-5">
+              <RiWhatsappLine size={15} className="text-church-gold shrink-0" aria-hidden="true" />
+              <p className="font-sans text-white/60 text-sm">
+                Need a ride?{' '}
+                <a
+                  href="https://wa.me/491773373200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-church-gold hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-church-gold rounded"
+                >
+                  Contact us
+                </a>
+              </p>
+            </div>
+
+            <div className="flex gap-4 mt-5" role="list" aria-label="Social Media">
               {socialLinks.map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}

@@ -31,7 +31,8 @@ const faqs = [
   { q: 'Are services in English?', a: 'Yes. All services are conducted in English. We also hold a German-language service at 9:00 AM on Sundays.' },
   { q: 'Is there a dress code?', a: 'No dress code — come as you are. What matters is that you feel welcome and at home.' },
   { q: 'How long is the Sunday morning service?', a: 'Approximately 75–90 minutes, including worship and preaching.' },
-  { q: 'Is there parking?', a: 'Yes — free parking is available onsite. The nearest public transport stop is Lapp Kabel (S-Bahn / U-Bahn).' },
+  { q: 'Is there parking?', a: 'Yes — free parking is available onsite. The nearest S-Bahn stop is Vaihingen and the nearest U-Bahn stop is Lapp Kabel.' },
+  { q: 'Do you need a pick-up / ride service?', a: 'Yes — if you need a ride to church, please contact us in advance and we will do our best to arrange it for you.' },
 ];
 
 export default function ServicesPage() {
@@ -122,6 +123,7 @@ export default function ServicesPage() {
                   { label: "Men's Fellowship",     note: 'Regular gatherings',        desc: 'Regular fellowship and discipleship for the men of the church.' },
                   { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun. Registration required.' },
                   { label: 'Summer Church Picnic', note: 'Whole Family · Annual',     desc: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.' },
+                  { label: 'Family Night',         note: 'Sat · 6:00 PM',            desc: 'A fun-filled evening for all ages with games, fellowship, and great community. Everyone is welcome!' },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-navyLight shrink-0" aria-hidden="true" />
@@ -235,7 +237,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex items-start gap-3">
                 <RiBusLine size={20} className="text-church-gold shrink-0 mt-1" aria-hidden="true" />
-                <p className="font-sans text-church-gray">Nearest stop: <strong className="text-church-navy">Lapp Kabel</strong> (S-Bahn / U-Bahn)</p>
+                <p className="font-sans text-church-gray">Nearest stop: <strong className="text-church-navy">Lapp Kabel</strong> (U-Bahn) / <strong className="text-church-navy">Vaihingen</strong> (S-Bahn)</p>
               </div>
             </div>
             <Button as="link" href="/contact" variant="primary" size="md">

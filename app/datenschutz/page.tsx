@@ -66,8 +66,7 @@ export default function DatenschutzPage() {
             <li>Content of your message</li>
           </ul>
           <p>
-            Processing takes place solely to handle your enquiry on the basis of Art. 6(1)(b) GDPR
-            (performance of pre-contractual measures) or Art. 6(1)(f) GDPR (legitimate interest in
+            Processing takes place solely to handle your enquiry on the basis of Art. 6(1)(f) GDPR (legitimate interest in
             responding to enquiries). Data is not passed on to third parties and is deleted after
             processing is complete, unless statutory retention obligations apply.
           </p>
@@ -136,7 +135,7 @@ export default function DatenschutzPage() {
 
           <h2>7. Currency of this Privacy Notice</h2>
           <p>
-            This Privacy Notice is currently valid and dated August 2025. As our website develops
+            This Privacy Notice is currently valid and dated October 2026. As our website develops
             or due to changes in legal or regulatory requirements, it may be necessary to amend
             this Privacy Notice.
           </p>
