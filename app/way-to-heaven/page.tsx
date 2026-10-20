@@ -39,7 +39,7 @@ export default function WayToHeavenPage() {
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute inset-0 w-full h-full rounded-2xl shadow-lg"
-              src="https://www.youtube.com/embed/mIeRU12STNw"
+              src="https://www.youtube.com/embed/w4GD7lCXmwU"
               title="The Way to Heaven — Can I be 100% sure I will go to heaven?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
