@@ -1,5 +1,5 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
-import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 import Image from 'next/image';
 
 const blurDataURL =
