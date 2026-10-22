@@ -80,6 +80,16 @@ export default function ServicesSection() {
         })}
       </AnimatedSection>
 
+   <AnimatedSection delay={0.4} className="text-center">
+        <Link
+          href="/services"
+          className="inline-flex items-center gap-2 font-sans font-medium text-church-gold hover:text-church-navy transition-colors duration-200 text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
+        >
+          View Services in detail
+          <RiArrowRightLine size={20} aria-hidden="true" />
+        </Link>
+      </AnimatedSection>
+      
       {/* German Service — separate box */}
       <AnimatedSection delay={0.3} className="mb-10">
         <div className="rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-slate-100 border border-slate-200 max-w-2xl mx-auto">
@@ -108,15 +118,7 @@ export default function ServicesSection() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection delay={0.4} className="text-center">
-        <Link
-          href="/services"
-          className="inline-flex items-center gap-2 font-sans font-medium text-church-gold hover:text-church-navy transition-colors duration-200 text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
-        >
-          View Services in detail
-          <RiArrowRightLine size={20} aria-hidden="true" />
-        </Link>
-      </AnimatedSection>
+   
 
     </SectionWrapper>
   );
