@@ -29,7 +29,7 @@ export default function WayToHeavenPage() {
         <AnimatedSection className="max-w-3xl mx-auto text-center">
           <span className="section-label block mb-4">The Question</span>
           <h2 className="mb-6 text-balance">
-            Can I be 100% sure today that I will go to TEST heaven when I die?
+            Can I be 100% sure today that I will go to heaven when I die?
           </h2>
           <p className="font-sans text-church-gray text-lg md:text-xl mb-12">
             YES! You can. Watch the video!
