@@ -195,14 +195,14 @@ export default function ContactSection() {
     <RiCarLine className="text-church-gold" size={18} aria-hidden="true" />
   </span>
   <div>
-    <p className="font-sans text-xs uppercase tracking-widest text-church-gold mb-1">Ride / Pickup</p>
-    <p className="font-sans text-white/80 text-sm">
+    <span className="block font-sans text-xs uppercase tracking-widest text-church-gold mb-1">Ride / Pickup</span>
+    <span className="block font-sans text-white/80 text-sm">
       Do you need a ride? Please{' '}
       <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
         contact us
       </a>
       {' '}— we&apos;ll be happy to help.
-    </p>
+    </span>
   </div>
 </li>
 
