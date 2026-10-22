@@ -91,7 +91,7 @@ export default function ServicesSection() {
       </AnimatedSection>
 
 
-            </div>
+            <div className="text-center mt-8 mb-8"/>
  
       {/* German Service — separate box */}
       <AnimatedSection delay={0.3} className="mb-10">
