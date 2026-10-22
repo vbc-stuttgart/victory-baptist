@@ -89,7 +89,10 @@ export default function ServicesSection() {
           <RiArrowRightLine size={20} aria-hidden="true" />
         </Link>
       </AnimatedSection>
-      
+
+
+      <div></div>
+ 
       {/* German Service — separate box */}
       <AnimatedSection delay={0.3} className="mb-10">
         <div className="rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-slate-100 border border-slate-200 max-w-2xl mx-auto">
