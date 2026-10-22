@@ -190,19 +190,16 @@ export default function ContactSection() {
               </li>
 
 
-     <li className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                  <RiCarLine size={18} className="text-church-gold" aria-hidden="true" />
-                 <p className="font-sans text-sm text-white/90">
-                    <span className="font-semibold text-white">Do you need a ride?</span>{' '}
-                    Please{' '}
-                    <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
-                      contact us
-                    </a>
-                    {' '}— we&apos;ll be happy to help.
-                  </p>
-                </div>
-              </li>
+     <li className="flex items-start gap-3">
+  <RiCarLine className="shrink-0 mt-0.5 text-church-gold" size={16} aria-hidden="true" />
+  <span className="font-sans text-white/80 text-sm">
+    Do you need a ride? Please{' '}
+    <a href="/contact" className="hover:text-church-gold transition-colors">
+      contact us
+    </a>
+    {' '}— we&apos;ll be happy to help.
+  </span>
+</li>
 
 
               <li className="flex items-start gap-4">
