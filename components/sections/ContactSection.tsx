@@ -189,10 +189,11 @@ export default function ContactSection() {
                 </div>
               </li>
 
-              <li>
-                <div className="rounded-xl bg-church-gold/20 border border-church-gold/40 px-4 py-3 flex items-center gap-3">
-                  <RiCarLine size={18} className="text-church-gold shrink-0" aria-hidden="true" />
-                  <p className="font-sans text-sm text-white/90">
+
+     <li className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+                  <RiCarLine size={18} className="text-church-gold" aria-hidden="true" />
+                 <p className="font-sans text-sm text-white/90">
                     <span className="font-semibold text-white">Do you need a ride?</span>{' '}
                     Please{' '}
                     <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
@@ -202,6 +203,7 @@ export default function ContactSection() {
                   </p>
                 </div>
               </li>
+
 
               <li className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
