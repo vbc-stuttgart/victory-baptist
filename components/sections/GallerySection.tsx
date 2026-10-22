@@ -47,7 +47,6 @@ const mediaItems: MediaItem[] = [
   { type: 'image', src: '/images/Junior_School1.png',           alt: 'Junior Church'            },
   { type: 'image', src: '/images/VBC.jpg',                      alt: 'Victory Baptist Church'   },
   { type: 'video', src: '/images/Prayer3.m4v',                  alt: 'Prayer'                   },
-  { type: 'image', src: '/images/testbild1.png',                alt: 'TEST'                   },
 
 ];
 
