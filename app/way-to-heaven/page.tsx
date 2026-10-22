@@ -3,7 +3,7 @@ import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 
 export const metadata: Metadata = {
-  title: 'The Way to Heaven',
+  title: 'The Way to TEST Heaven',
   description:
     'Can I be 100% sure today that I will go to heaven when I die? YES! Find out how.',
 };
