@@ -191,16 +191,19 @@ export default function ContactSection() {
 
 
 <li className="flex items-start gap-3">
-  <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-    <RiCarLine className="text-church-gold" size={15} aria-hidden="true" />
+  <span className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+    <RiCarLine className="text-church-gold" size={18} aria-hidden="true" />
   </span>
-  <span className="font-sans text-white/80 text-sm">
-    Do you need a ride? Please{' '}
-    <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
-      contact us
-    </a>
-    {' '}— we&apos;ll be happy to help.
-  </span>
+  <div>
+    <p className="font-sans text-xs uppercase tracking-widest text-church-gold mb-1">Ride / Pickup</p>
+    <p className="font-sans text-white/80 text-sm">
+      Do you need a ride? Please{' '}
+      <a href="/contact" className="text-church-gold underline underline-offset-2 hover:text-white transition-colors">
+        contact us
+      </a>
+      {' '}— we&apos;ll be happy to help.
+    </p>
+  </div>
 </li>
 
 
