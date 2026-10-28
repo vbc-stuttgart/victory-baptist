@@ -9,13 +9,13 @@ import { RiMapPin2Line, RiArrowRightLine, RiCarLine, RiBusLine, RiInformationLin
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Join Victory Baptist Church Stuttgart — Sunday services at 10:45 AM, Sunday School at 10:20 AM, and Wednesday prayer meetings.',
+    'Join Victory Baptist Church Stuttgart — Sunday services at 10:30 AM, Sunday School at 10:20 AM, and Wednesday prayer meetings.',
 };
 
 
 const ministries = [
   { title: 'Nursery',                desc: 'Childcare for infants and toddlers ages 0–3, provided during all services.' },
-  { title: 'Junior Church',          desc: 'A dedicated programme for children ages 4–12 running during the Sunday morning service at 10:45 AM.' },
+  { title: 'Junior Church',          desc: 'A dedicated programme for children ages 4–12 running during the Sunday morning service at 10:30 AM.' },
   { title: 'Ladies Sunday School',   desc: "Women's Bible class every Sunday at 10:20 AM." },
   { title: "Men's Sunday School",    desc: "Men's Bible class every Sunday at 10:20 AM." },
   { title: 'Teens Sunday School',    desc: 'Teenage class every Sunday at 10:20 AM.' },
@@ -48,7 +48,7 @@ export default function ServicesPage() {
               Join us for worship, Bible preaching, and fellowship. All services in English.
             </p>
             <p className="font-sans text-white/60 text-base mt-4 font-medium">
-              Sunday Morning Service · 10:45 AM · Schulze-Delitzsch-Straße 30, 70565 Stuttgart
+              Sunday Morning Service · 10:30 AM · Schulze-Delitzsch-Straße 30, 70565 Stuttgart
             </p>
           </AnimatedSection>
         </div>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
               <ul className="flex-1 divide-y divide-gray-100">
                 {[
                   { label: 'German Service',           note: 'Sun · 9:00 AM',             desc: 'A German-language service for our German-speaking friends — all are welcome. Hosted together with Wort Gottes Gemeinde.' },
-                  { label: 'Sunday Morning Service',  note: 'Sun · 10:45 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
+                  { label: 'Sunday Morning Service',  note: 'Sun · 10:30 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
                   { label: 'Afternoon / Evening Service', note: null, desc: 'A deeper study of God\'s Word — teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
                   { label: 'Wednesday Prayer Meeting',note: 'Wed · 7:00 PM',             desc: 'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.' },
                   { label: 'Sunday School',           note: 'Sun · 10:20 AM',            desc: 'Bible classes for children and youth meeting before the main service for in-depth study and fellowship.' },
