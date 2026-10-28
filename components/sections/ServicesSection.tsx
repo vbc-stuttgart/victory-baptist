@@ -14,8 +14,8 @@ const services = [
   {
     icon:        RiBookOpenLine,
     title:       'Sunday Morning Service',
-    time:        'Sunday · 10:45 AM',
-    description: "With the truth in his hands and the love of Christ in his heart, our pastor preaches God's message to us every Sunday at 10:45 a.m.",
+    time:        'Sunday · 10:30 AM',
+    description: "With the truth in his hands and the love of Christ in his heart, our pastor preaches God's message to us every Sunday at 10:30 a.m.",
     tag:         'PREACHING',
   },
   {
