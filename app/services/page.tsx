@@ -77,7 +77,7 @@ export default function ServicesPage() {
                 {[
                   { label: 'German Service',           note: 'Sun · 10:00 AM',             desc: 'A German-language service for our German-speaking friends — all are welcome.' },
                   { label: 'Sunday Morning Service',  note: 'Sun · 10:30 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
-                  { label: 'Advanced Christianity', note: null, desc: 'A deeper and practical study of God&apos;s Word; teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
+                  { label: 'Advanced Christianity', note: null, desc: 'A deeper and practical study of God\'s Word; teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
                   { label: 'The Hour of Power',note: 'Wed · 7:00 PM',             desc: 'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.' },
                   { label: 'Bible Conference',        note: 'Annual',                     desc: 'In-depth Bible preaching and teaching from guest speakers. A highlight of our church calendar each year.' },
                 ].map((item) => (
