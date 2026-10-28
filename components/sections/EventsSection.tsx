@@ -7,11 +7,11 @@ import { RiArrowRightLine } from 'react-icons/ri';
 
 const events = [
   {
-    day:         '3rd Sat',
-    month:       'Monthly',
-    title:       'School of the Bible',
-    description: 'Online Bible institute meeting on the third Saturday of each month. Open to all — registration required.',
-    tag:         'Online · Register',
+    day:         'August',
+    month:       'Annual',
+    title:       'Vacation Bible School',
+    description: 'Kids ages 4–11 enjoy days full of Bible stories, games, crafts, and songs as they learn about Jesus. Registration required.',
+    tag:         'Kids · Register',
     tagColor:    'gold' as const,
     image:       '/images/Sunday School — Children.jpg',
   },
