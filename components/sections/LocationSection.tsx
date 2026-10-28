@@ -79,7 +79,7 @@ export default function LocationSection() {
         <div className="bg-church-navy/5 border border-church-navy/10 rounded-xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <span className="font-sans text-xs uppercase tracking-widest text-church-navy/50 shrink-0">Auf Deutsch</span>
           <p className="font-sans text-church-gray text-sm">
-            We also hold a German-language service at <strong>10:00 AM</strong>strong></strong> on Sundays.
+            We also hold a German-language service at <strong>10:00 AM</strong> on Sundays.
             German-speaking visitors are also warmly referred to our sister church{' '}
             <a
               href="https://www.wgg-baptisten.de"
