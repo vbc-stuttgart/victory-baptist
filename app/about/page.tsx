@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="space-y-5 text-church-gray font-sans text-base md:text-lg leading-relaxed">
               <p>
                 Victory Baptist Church exists to preach the Gospel of Salvation in Jesus Christ to the
-                international community of Stuttgart. Our heartfelt prayer is for people to know the Lord
+                military community of Stuttgart. Our heartfelt prayer is for people to know the Lord
                 Jesus Christ as their personal Saviour and become actively involved in a Bible-believing,
                 Bible-preaching church that cares for them.
               </p>
@@ -80,8 +80,8 @@ export default function AboutPage() {
                 traditional focus, while remaining warm and welcoming to all who come through our doors.
               </p>
               <p>
-                Our congregation is truly international — expats, military personnel from nearby Patch
-                Barracks and Kelley Barracks, foreign workers, students, and international families from
+                Our congregation is truly military — expats, military personnel from nearby Patch
+                Barracks and Kelley Barracks, foreign workers, students, and military families from
                 across Stuttgart and the surrounding area. Every two to three Sundays, new faces walk
                 through our doors. Everyone is welcome.
               </p>
