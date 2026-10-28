@@ -26,12 +26,12 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.victorybaptist-stuttgart.de'),
   title: {
-    default: 'Victory Baptist Church Stuttgart',
+    default: 'Victory Baptist Church Stuttgart, English-Speaking Church for the Military Community',
     template: '%s | Victory Baptist Church Stuttgart',
   },
   description:
-    'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:30 AM. Everyone is welcome.',
-  keywords: ['Baptist', 'Stuttgart', 'English church', 'expat church', 'international church', 'Bible', 'Germany', 'Vaihingen', 'English church Stuttgart', 'Baptist church near Patch Barracks', 'Church near Vaihingen'],
+    'An English-speaking independent Baptist church in Stuttgart, welcoming military families from Patch, Kelley, Panzer Kaserne and Robinson Barracks. Sundays at 10:30 AM.',
+  keywords: ['Baptist', 'English church Stuttgart', 'Vaihingen', 'KJV Bible church', 'military church Stuttgart', 'church near Patch Barracks', 'church near Kelley Barracks', 'church near Panzer Kaserne', 'church near Robinson Barracks', 'USAG Stuttgart church', 'AFRICOM', 'EUCOM', 'American church Stuttgart', 'Böblingen', 'Möhringen'],
   authors: [{ name: 'Victory Baptist Church Stuttgart' }],
   creator: 'Victory Baptist Church Stuttgart',
   openGraph: {
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.victorybaptist-stuttgart.de',
     siteName: 'Victory Baptist Church Stuttgart',
-    title: 'Victory Baptist Church Stuttgart',
+    title: 'Victory Baptist Church Stuttgart, English-Speaking Church for the Military Community',
     description:
-      'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:30 AM.',
+      'An English-speaking Baptist church in Stuttgart for military families at Patch, Kelley, Panzer and Robinson Barracks. Sundays at 10:30 AM.',
     images: [
       {
         url: '/images/og-image.jpg',
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Victory Baptist Church Stuttgart',
-    description: 'An English-speaking, independent Baptist church in Stuttgart, Germany.',
+    title: 'Victory Baptist Church Stuttgart, English-Speaking Church for the Military Community',
+    description: 'An English-speaking Baptist church in Stuttgart for military families at Patch, Kelley, Panzer and Robinson Bar
     images: ['/images/og-image.jpg'],
   },
   alternates: {
