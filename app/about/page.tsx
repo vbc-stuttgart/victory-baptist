@@ -80,10 +80,9 @@ export default function AboutPage() {
                 traditional focus, while remaining warm and welcoming to all who come through our doors.
               </p>
               <p>
-                Our congregation is truly military — expats, military personnel from nearby Patch
+                Our congregation is truly diverse — expats, military personnel from nearby Patch
                 Barracks and Kelley Barracks, foreign workers, students, and military families from
-                across Stuttgart and the surrounding area. Every two to three Sundays, new faces walk
-                through our doors. Everyone is welcome.
+                across Stuttgart and the surrounding area. Everyone is welcome.
               </p>
             </div>
           </AnimatedSection>
