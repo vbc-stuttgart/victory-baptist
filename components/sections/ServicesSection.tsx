@@ -25,6 +25,13 @@ const services = [
     description: 'Every Wednesday we meet and fellowship in prayer with the Lord Jesus. Without Him, we can do nothing.',
     tag:         'POWER',
   },
+  {
+    icon:        RiBookOpenLine,
+    title:       'The Church of the Living God',
+    time:        '1 Timothy 3:15',
+    description: "But if I tarry long, that thou mayest know how thou oughtest to behave thyself in the house of God, which is the church of the living God, the pillar and ground of the truth.",
+    tag:         'KJV',
+  },
 
   /*{
     icon:        RiHeartLine,
