@@ -102,7 +102,7 @@ export default function ServicesSection() {
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               <h3 className="font-serif font-bold text-slate-700 text-base">Deutscher Gottesdienst</h3>
-              <span className="font-sans text-xs uppercase tracking-widest bg-slate-200 text-slate-500 px-3 py-1 rounded-full">Sunday · 9:00 AM</span>
+              <span className="font-sans text-xs uppercase tracking-widest bg-slate-200 text-slate-500 px-3 py-1 rounded-full">Sunday · 10:00 AM</span>
               <span className="font-sans text-xs text-slate-400 italic">Wort Gottes Gemeinde</span>
             </div>
             <p className="font-sans text-slate-500 text-sm leading-relaxed">
