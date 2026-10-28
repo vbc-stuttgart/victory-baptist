@@ -21,18 +21,10 @@ export default function AboutSection() {
 
           <div className="space-y-5 text-church-gray">
             <p className="font-sans text-base md:text-lg leading-relaxed">
-              Victory Baptist Church is an English-speaking, independent Baptist church in Stuttgart, Germany.
-              Our heartfelt mission is to preach the Gospel of Salvation in Jesus Christ to the international
-              community — and our prayer is for people to know the Lord Jesus Christ as their personal Saviour.
+              Victory Baptist Church is an English speaking church in Stuttgart, Germany. Our heartfelt mission is to preach the Gospel of Salvation in Jesus Christ; and our prayer is for people to know the Lord Jesus Christ as their personal Saviour. Our congregation is made up of military personnel, expats, foreign workers, students, and international families from all over the world — united by the Lord Jesus.
             </p>
             <p className="font-sans text-base md:text-lg leading-relaxed">
-              We use the King James Bible and hold to classic independent Baptist theology with a classical
-              doctrinal focus. Our congregation is made up of expats, military personnel, foreign workers,
-              students, and international families from all over the world — united by one faith.
-            </p>
-            <p className="font-sans text-base md:text-lg leading-relaxed">
-              Whether you are weak, discouraged, afraid, struggling, or unsure of yourself — we will love
-              you as Christ has loved us. Bring your family. Everyone is welcome.
+              Whether you are weak, discouraged, afraid, struggling, or unsure of yourself, we will love you as Christ has loved us.
             </p>
           </div>
 
