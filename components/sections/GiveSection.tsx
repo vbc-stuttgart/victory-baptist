@@ -9,8 +9,7 @@ export default function GiveSection() {
         <span className="section-label block mb-3 text-church-gold">Support the Ministry</span>
         <h2 className="text-white mb-6 text-balance">Offering to Victory Baptist Church</h2>
         <p className="font-sans text-white/75 text-base md:text-lg mb-10 max-w-xl mx-auto">
-          Your generous offering enables us to preach the Gospel in Stuttgart and reach the
-          international community with the message of salvation in Jesus Christ.
+          Your financial offering is a contribution to God's work through VBC in the city of Stuttgart.
         </p>
         <blockquote className="font-lora italic text-white/55 text-sm mb-10">
           &ldquo;God loveth a cheerful giver.&rdquo; — 2 Corinthians 9:7
