@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: '%s | Victory Baptist Church Stuttgart',
   },
   description:
-    'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:45 AM. Everyone is welcome.',
+    'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:30 AM. Everyone is welcome.',
   keywords: ['Baptist', 'Stuttgart', 'English church', 'expat church', 'international church', 'Bible', 'Germany', 'Vaihingen', 'English church Stuttgart', 'Baptist church near Patch Barracks', 'Church near Vaihingen'],
   authors: [{ name: 'Victory Baptist Church Stuttgart' }],
   creator: 'Victory Baptist Church Stuttgart',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Victory Baptist Church Stuttgart',
     title: 'Victory Baptist Church Stuttgart',
     description:
-      'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:45 AM.',
+      'An English-speaking, independent Baptist church in Stuttgart, Germany. Sunday services at 10:30 AM.',
     images: [
       {
         url: '/images/og-image.jpg',
