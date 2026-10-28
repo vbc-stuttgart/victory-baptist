@@ -20,7 +20,7 @@ const services = [
   },
   {
     icon:        RiFireLine,
-    title:       'Wednesday Prayer Meeting',
+    title:       'The Hour of Power',
     time:        'Wednesday · 7:00 PM.',
     description: 'Every Wednesday we meet and fellowship in prayer with the Lord Jesus. Without Him, we can do nothing.',
     tag:         'POWER',
