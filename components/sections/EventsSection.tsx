@@ -16,10 +16,10 @@ const events = [
     image:       '/images/Sunday School — Children.jpg',
   },
   {
-    day:         'Nov 26th',
-    month:       '2026',
+    day:         '4th Thursday in Nov',
+    month:       'Annual',
     title:       'Thanksgiving Day Celebration',
-    description: 'Join us as we gather to give thanks to the Lord for His goodness and faithfulness. A special service of praise, prayer, and the Word.',
+    description: 'Join us as we gather to give thanks to the Lord for His goodness and faithfulness. A special service of praise and prayer.',
     tag:         'Special Service',
     tagColor:    'gold' as const,
     image:       '/images/Thanksgiving_Meal.avif',
