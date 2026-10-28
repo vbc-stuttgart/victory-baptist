@@ -1,16 +1,9 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import Link from 'next/link';
-import { RiBookOpenLine, RiTeamLine, RiMoonLine, RiFireLine, RiArrowRightLine, RiGlobalLine, RiExternalLinkLine } from 'react-icons/ri';
+import { RiBookOpenLine, RiMoonLine, RiFireLine, RiArrowRightLine, RiGlobalLine, RiExternalLinkLine } from 'react-icons/ri';
 
 const services = [
-  {
-    icon:        RiTeamLine,
-    title:       'Sunday School',
-    time:        'Sunday · 10:20 AM',
-    description: 'Classes for our children meet before the main service for in-depth Bible study and fellowship.',
-    tag:         "CHILDREN MINISTRY",
-  },
   {
     icon:        RiBookOpenLine,
     title:       'Sunday Morning Service',
@@ -20,9 +13,9 @@ const services = [
   },
   {
     icon:        RiMoonLine,
-    title:       'Sunday Evening',
+    title:       'Advanced Christianity',
     time:        'Sunday · Afternoon / Evening',
-    description: 'Salvation is not the end. It is a wonderful beginning, but still just the beginning of the christian life. Every Sunday evening, we teach every man in all wisdom, so that we may present every man perfect in Christ Jesus.',
+    description: 'Salvation is not the end. It is a wonderful beginning, but still just the beginning of the christian life. Every Sunday evening, we deepen our roots, so that we rise higher in our spiritual life.',
     tag:         'PERFECTING / DISCIPLESHIP',
   },
   {
