@@ -19,9 +19,6 @@ const ministries = [
   { title: 'Ladies Sunday School',   desc: "Women's Bible class every Sunday at 10:20 AM." },
   { title: "Men's Sunday School",    desc: "Men's Bible class every Sunday at 10:20 AM." },
   { title: 'Teens Sunday School',    desc: 'Teenage class every Sunday at 10:20 AM.' },
-  { title: "Ladies' Fellowship",     desc: 'Regular fellowship gatherings for the women of the church.' },
-  { title: "Men's Fellowship",       desc: 'Regular fellowship and discipleship for the men of the church.' },
-  { title: 'School of the Bible',    desc: 'Online Bible institute meeting every 3rd Saturday of the month. Registration required.' },
   { title: 'Vacation Bible School',  desc: 'Summer VBS for children ages 4–12. Registration required.' },
 ];
 
