@@ -20,7 +20,6 @@ const mediaItems: MediaItem[] = [
   { type: 'image', src: '/images/Children_Ministry_2.jpg',      alt: 'Children Ministry'        },
   { type: 'image', src: '/images/Sunday_School.jpg',            alt: 'Sunday School'            },
   { type: 'image', src: '/images/Sunday School — Children.jpg', alt: 'Sunday School'            },
-  { type: 'image', src: '/images/community2.png',               alt: 'Church Community'         },
   { type: 'image', src: '/images/Christmas1.png',               alt: 'Christmas Service'        },
   { type: 'image', src: '/images/Sunday_service.png',           alt: 'Sunday Service'           },
   { type: 'image', src: '/images/Sunday School — Children_2.jpg', alt: 'Sunday School'          },
