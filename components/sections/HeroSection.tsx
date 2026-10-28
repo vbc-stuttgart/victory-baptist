@@ -57,7 +57,7 @@ export default function HeroSection() {
           {...fadeUp(0.4)}
           className="font-lora italic text-white/90 text-xl mt-6 max-w-xl text-balance"
         >
-          We are an English-speaking, independent, Baptist church in Stuttgart — preaching the Gospel of Salvation in Jesus Christ to the international community.
+          We are an English-speaking independent Baptist church in Stuttgart, preaching the gospel of salvation in Jesus Christ to the military community.
         </motion.p>
 
         <motion.blockquote
