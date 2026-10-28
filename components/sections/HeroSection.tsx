@@ -76,7 +76,7 @@ export default function HeroSection() {
             href="/services"
             className="inline-flex items-center justify-center gap-2 bg-church-gold text-white font-sans font-medium rounded-full px-8 py-4 min-h-[52px] hover:bg-church-goldLight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
-            Join Us Sunday at 10:45 AM
+            Join Us Sunday at 10:30 AM
           </Link>
           <Link
             href="/about"
