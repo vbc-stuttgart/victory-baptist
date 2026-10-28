@@ -78,7 +78,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <RiTimeLine className="shrink-0 mt-0.5 text-church-gold" size={16} aria-hidden="true" />
-                <span>Sunday at 10:45 AM</span>
+                <span>Sunday at 10:30 AM</span>
               </li>
               <li className="flex items-start gap-3">
                 <RiMailLine className="shrink-0 mt-0.5 text-church-gold" size={16} aria-hidden="true" />
