@@ -113,7 +113,7 @@ export default function ServicesPage() {
                 {[
                   { label: 'Nursery / Childcare', note: 'Ages 0–3 · All Services',  desc: 'Loving childcare provided during every service so parents can worship freely.' },
                   { label: 'Junior Church',        note: 'Ages 4–12 · Sun Morning',  desc: 'A dedicated programme for children running simultaneously with the morning service.' },
-                  { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun.' },
+                  { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun. Registration required.' },
                   { label: 'Summer Church Picnic', note: 'Whole Family · Annual',     desc: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.' },
                   { label: 'Family Night',         note: 'Monthly · Friday night',            desc: 'A fun-filled evening for all ages with games, fellowship, and great community. Everyone is welcome!' },
                 ].map((item) => (
