@@ -150,7 +150,7 @@ export default function AboutPage() {
           <span className="section-label block mb-3">You Are Invited</span>
           <h2 className="mb-6 text-balance">Come and See for Yourself</h2>
           <p className="font-sans text-church-gray text-base md:text-lg mb-8">
-            No registration needed. Just come on Sunday at 10:45 AM to Schulze-Delitzsch-Straße 30,
+            No registration needed. Just come on Sunday at 10:30 AM to Schulze-Delitzsch-Straße 30,
             70565 Stuttgart — and we will take care of the rest.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
