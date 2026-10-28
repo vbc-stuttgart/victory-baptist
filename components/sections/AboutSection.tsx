@@ -1,12 +1,6 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 
-const values = [
-  { icon: '📖', label: 'Bible-Believing' },
-  { icon: '🌍', label: 'International'   },
-  { icon: '🤝', label: 'Welcoming'       },
-];
-
 export default function AboutSection() {
   return (
     <SectionWrapper id="about" bg="white">
@@ -29,18 +23,6 @@ export default function AboutSection() {
           </div>
 
           {/* Value chips */}
-          <div className="flex flex-wrap gap-3 mt-8" role="list" aria-label="Our values">
-            {values.map(({ icon, label }) => (
-              <div
-                key={label}
-                role="listitem"
-                className="inline-flex items-center gap-2 bg-church-olive/10 text-church-olive rounded-full px-4 py-2 font-sans text-sm font-medium"
-              >
-                <span aria-hidden="true">{icon}</span>
-                <span>{label}</span>
-              </div>
-            ))}
-          </div>
         </AnimatedSection>
 
         {/* Right: Bible verse card */}
