@@ -26,7 +26,7 @@ const events = [
   },
   {
     day:         'Dec 24',
-    month:       '',
+    month:       'Annual',
     title:       "Christmas Eve Candlelight Service",
     description: "A beautiful evening service of carols, candlelight, and the proclamation of Christ's birth.",
     tag:         'Special Service',
