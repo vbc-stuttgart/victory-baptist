@@ -164,7 +164,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Sunday Service</span>
-                  <p className="font-sans text-white/85 text-sm">10:45 AM · Sunday School at 10:20 AM</p>
+                  <p className="font-sans text-white/85 text-sm">10:30 AM · Sunday School at 10:20 AM</p>
                 </div>
               </li>
 
