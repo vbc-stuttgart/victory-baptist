@@ -6,7 +6,7 @@ import BibleVerseSection from '@/components/sections/BibleVerseSection';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Victory Baptist Church Stuttgart — Schulze-Delitzsch-Straße 30, 70565 Stuttgart. Sunday services at 10:45 AM.',
+    'Get in touch with Victory Baptist Church Stuttgart — Schulze-Delitzsch-Straße 30, 70565 Stuttgart. Sunday services at 10:30 AM.',
 };
 
 export default function ContactPage() {
