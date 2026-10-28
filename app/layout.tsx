@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Victory Baptist Church Stuttgart, English-Speaking Church for the Military Community',
-    description: 'An English-speaking Baptist church in Stuttgart for military families at Patch, Kelley, Panzer and Robinson Bar
+    description: 'An English-speaking Baptist church in Stuttgart for military families at Patch, Kelley, Panzer and Robinson Barracks. Sundays at 10:30 AM.',
     images: ['/images/og-image.jpg'],
   },
   alternates: {
