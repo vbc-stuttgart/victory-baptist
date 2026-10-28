@@ -2,7 +2,7 @@
 
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import { RiMapPin2Line, RiTimeLine, RiMailLine, RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiCarLine, RiBusLine, RiPhoneLine } from 'react-icons/ri';
+import { RiMapPin2Line, RiTimeLine, RiMailLine, RiFacebookFill, RiInstagramLine, RiYoutubeFill, RiCarLine, RiBusLine } from 'react-icons/ri';
 import Button from '@/components/ui/Button';
 import { useState, FormEvent } from 'react';
 
@@ -207,20 +207,6 @@ export default function ContactSection() {
 </li>
 
 
-              <li className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                  <RiPhoneLine size={18} className="text-church-gold" aria-hidden="true" />
-                </div>
-                <div>
-                  <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Phone / WhatsApp</span>
-                  <a
-                    href="tel:+491773373200"
-                    className="font-sans text-white/85 text-sm hover:text-church-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded"
-                  >
-                    +49 177 3373200
-                  </a>
-                </div>
-              </li>
 
               <li className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
