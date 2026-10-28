@@ -28,7 +28,7 @@ const ministries = [
 const faqs = [
   { q: 'Do I need to register for Sunday services?', a: 'No — regular Sunday services are open to everyone with no registration required. Just come!' },
   { q: 'Is there childcare available?', a: 'Yes. We provide a nursery for children ages 0–3 and Junior Church for ages 4–12 during the Sunday morning service.' },
-  { q: 'Are services in English?', a: 'Yes. All services are conducted in English. We also hold a German-language service at 9:00 AM on Sundays.' },
+  { q: 'Are services in English?', a: 'Yes. All services are conducted in English. We also hold a German-language service at 10:00 AM on Sundays.' },
   { q: 'Is there a dress code?', a: 'No dress code — come as you are. What matters is that you feel welcome and at home.' },
   { q: 'How long is the Sunday morning service?', a: 'Approximately 75–90 minutes, including worship and preaching.' },
   { q: 'Is there parking?', a: 'Yes — free parking is available onsite. The nearest S-Bahn stop is Vaihingen and the nearest U-Bahn stop is Lapp Kabel.' },
@@ -75,7 +75,7 @@ export default function ServicesPage() {
               </div>
               <ul className="flex-1 divide-y divide-gray-100">
                 {[
-                  { label: 'German Service',           note: 'Sun · 9:00 AM',             desc: 'A German-language service for our German-speaking friends — all are welcome. Hosted together with Wort Gottes Gemeinde.' },
+                  { label: 'German Service',           note: 'Sun · 10:00 AM',             desc: 'A German-language service for our German-speaking friends — all are welcome. Hosted together with Wort Gottes Gemeinde.' },
                   { label: 'Sunday Morning Service',  note: 'Sun · 10:30 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
                   { label: 'Afternoon / Evening Service', note: null, desc: 'A deeper study of God\'s Word — teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
                   { label: 'Wednesday Prayer Meeting',note: 'Wed · 7:00 PM',             desc: 'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.' },
