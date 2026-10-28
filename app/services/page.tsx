@@ -143,7 +143,7 @@ export default function ServicesPage() {
               <ul className="flex-1 divide-y divide-gray-100">
                 {[
                   { label: 'Resurrection Sunday',            note: 'April · Special Service',  desc: 'A powerful celebration of the risen Lord Jesus Christ — praise, Gospel preaching, and joy. Registration required.' },
-                  { label: 'International Musical Services', note: 'Seasonal',                  desc: 'Special services featuring music and worship reflecting the international diversity of our congregation. Registration required.' },
+                  { label: 'Musical Presentation', note: 'Seasonal',                  desc: 'Special services featuring music and worship reflecting the international diversity of our congregation. Registration required.' },
                   { label: 'Missions Sundays',               note: 'Throughout the year',       desc: 'Dedicated Sundays for prayer, giving, and support for missionaries and Gospel outreach worldwide. Registration required.' },
                   { label: 'Thanksgiving Celebration',       note: 'November',                  desc: 'Gathering together to give thanks to the Lord for His goodness, faithfulness, and grace. Registration required.' },
                   { label: 'Christmas Eve Candlelight',      note: 'Dec 24 · Special Service',  desc: 'A beautiful evening of carols, candlelight, and the proclamation of Christ\'s birth. Registration required.' },
