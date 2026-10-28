@@ -56,7 +56,7 @@ export default function TeamSection() {
             Pastor Patrick Jobway was called to serve as pastor of Victory Baptist Church in 2023. He received Jesus Christ as his Savior at age 16. After earning a Master&apos;s degree in Electrical Engineering, he worked in that field for more than 12 years before answering God&apos;s call to full-time ministry in 2018.
           </p>
           <p className="font-sans text-church-gray text-sm leading-relaxed mt-3">
-            He also holds a Bachelor of Theology and a Master&apos;s degree in Pastoral Ministry from Crown University in the United States. Together with his wife, Christelle, he accepted God&apos;s call to serve in Germany. Our Pastor is multilingual; he also founded a German-speaking church in Stuttgart.
+            He also holds a Bachelor of Theology and a Master&apos;s degree in Pastoral Ministry from Crown College in the United States. Together with his wife, Christelle, he accepted God&apos;s call to serve in Germany. Our Pastor is multilingual; he also founded a German-speaking church in Stuttgart.
           </p>
           <p className="font-sans text-church-gray text-sm leading-relaxed mt-3">
             He is passionate about teaching God&apos;s Word and shepherding God&apos;s flock. Pastor Jobway and his wife would love to meet you soon at Victory Baptist Church.
