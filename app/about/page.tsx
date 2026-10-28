@@ -75,8 +75,8 @@ export default function AboutPage() {
                 Bible-preaching church that cares for them.
               </p>
               <p>
-                We are an independent Baptist church — no denominations, no bishop hierarchies. The King
-                James Bible is our sole authority. We hold to classical, sound Baptist doctrine with a
+                We are an independent Baptist church. We use the King James Bible.
+                We hold to classical, sound Baptist doctrine with a
                 traditional focus, while remaining warm and welcoming to all who come through our doors.
               </p>
               <p>
