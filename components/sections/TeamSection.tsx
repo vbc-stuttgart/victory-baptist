@@ -39,7 +39,7 @@ export default function TeamSection() {
             <div className="w-10 h-0.5 bg-church-gold/40 mb-4 mx-auto md:mx-0" />
             <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-4"></span>
             <p className="font-sans text-church-gray text-sm leading-relaxed">
-              Married in 2007, Pastor and Mrs. Christelle answered God&apos;s call to bring the Gospel to the international community of Germany — serving faithfully at Victory Baptist Church Stuttgart.
+              Married in 2007, Pastor and Mrs. Christelle answered God&apos;s call to bring the Gospel to the military community of Germany, serving faithfully at Victory Baptist Church Stuttgart since 2023.
             </p>
           </div>
         </div>
