@@ -62,7 +62,7 @@ export default function AboutSection() {
 
             <div className="mt-8 pt-8 border-t border-church-gold/20">
               <p className="font-sans text-sm text-church-gray italic">
-                Sound doctrine. Faithful preaching. A warm, welcoming home for the international
+                Sound doctrine. Faithful preaching. A warm, welcoming home for the military
                 community in Stuttgart.
               </p>
             </div>
