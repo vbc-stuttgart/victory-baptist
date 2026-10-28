@@ -15,7 +15,7 @@ export default function TeamSection() {
         <span className="section-label block mb-3">The People Behind the Church</span>
         <h2 className="text-balance">Meet Our Pastor</h2>
         <p className="font-sans text-church-gray mt-4 max-w-xl mx-auto text-base md:text-lg">
-          Called by God to reach the people of Germany — Pastor Patrick serve Victory Baptist Church with love and dedication.
+          The Lord sent Pastor Jobway to serve in Germany.
         </p>
       </AnimatedSection>
 
