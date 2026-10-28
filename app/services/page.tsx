@@ -79,7 +79,6 @@ export default function ServicesPage() {
                   { label: 'Sunday Morning Service',  note: 'Sun · 10:30 AM',            desc: 'Our main worship service featuring congregational singing, prayer, and pastoral preaching from the King James Bible.' },
                   { label: 'Advanced Christianity', note: null, desc: 'A deeper and practical study of God\'s Word; teaching every man in all wisdom so that we may present every man perfect in Christ Jesus.', schedule: [{ period: 'Jan – May', time: 'Sun · 6:15 PM' }, { period: 'June – Aug', time: 'Sun · 1:00 PM' }, { period: 'Sept – Dec', time: 'Sun · 6:15 PM' }] },
                   { label: 'The Hour of Power',note: 'Wed · 7:00 PM',             desc: 'The prayer meeting is the powerhouse of the church. We gather mid-week for corporate prayer, Bible reading, and fellowship.' },
-                  { label: 'Bible Conference',        note: 'Annual',                     desc: 'In-depth Bible preaching and teaching from guest speakers. A highlight of our church calendar each year.' },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-gold shrink-0" aria-hidden="true" />
@@ -110,18 +109,16 @@ export default function ServicesPage() {
           <AnimatedItem>
             <div className="card-base h-full flex flex-col overflow-hidden">
               <div className="bg-church-navyLight px-6 py-4">
-                <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Community</span>
+                <span className="font-sans text-xs uppercase tracking-widest text-church-gold block mb-1">Serving Together</span>
                 <h3 className="font-serif text-white text-xl">Connect & Belong</h3>
               </div>
               <ul className="flex-1 divide-y divide-gray-100">
                 {[
                   { label: 'Nursery / Childcare', note: 'Ages 0–3 · All Services',  desc: 'Loving childcare provided during every service so parents can worship freely.' },
                   { label: 'Junior Church',        note: 'Ages 4–12 · Sun Morning',  desc: 'A dedicated programme for children running simultaneously with the morning service.' },
-                  { label: "Ladies' Fellowship",   note: 'Regular gatherings',        desc: 'Regular fellowship gatherings for the women of the church — encouragement, prayer, and sisterhood.' },
-                  { label: "Men's Fellowship",     note: 'Regular gatherings',        desc: 'Regular fellowship and discipleship for the men of the church.' },
                   { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun. Registration required.' },
                   { label: 'Summer Church Picnic', note: 'Whole Family · Annual',     desc: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.' },
-                  { label: 'Family Night',         note: 'Sat · 6:00 PM',            desc: 'A fun-filled evening for all ages with games, fellowship, and great community. Everyone is welcome!' },
+                  { label: 'Family Night',         note: 'Monthly · Friday night',            desc: 'A fun-filled evening for all ages with games, fellowship, and great community. Everyone is welcome!' },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-navyLight shrink-0" aria-hidden="true" />
