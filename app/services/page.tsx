@@ -113,7 +113,7 @@ export default function ServicesPage() {
                 {[
                   { label: 'Nursery / Childcare', note: 'Ages 0–3 · All Services',  desc: 'Loving childcare provided during every service so parents can worship freely.' },
                   { label: 'Junior Church',        note: 'Ages 4–12 · Sun Morning',  desc: 'A dedicated programme for children running simultaneously with the morning service.' },
-                  { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun. Registration required.' },
+                  { label: 'Summer VBS',           note: 'Children · Annual',         desc: 'Vacation Bible School for children ages 4–12: Bible lessons, songs, games, and fun.' },
                   { label: 'Summer Church Picnic', note: 'Whole Family · Annual',     desc: 'The whole church family gathers for a summer picnic with food, fellowship, and fun for all ages.' },
                   { label: 'Family Night',         note: 'Monthly · Friday night',            desc: 'A fun-filled evening for all ages with games, fellowship, and great community. Everyone is welcome!' },
                 ].map((item) => (
@@ -139,11 +139,11 @@ export default function ServicesPage() {
               </div>
               <ul className="flex-1 divide-y divide-gray-100">
                 {[
-                  { label: 'Resurrection Sunday',            note: 'April · Special Service',  desc: 'A powerful celebration of the risen Lord Jesus Christ — praise, Gospel preaching, and joy. Registration required.' },
-                  { label: 'Musical Presentation', note: 'Seasonal',                  desc: 'Special services featuring music and worship reflecting the international diversity of our congregation. Registration required.' },
-                  { label: 'Missions Sundays',               note: 'Throughout the year',       desc: 'Dedicated Sundays for prayer, giving, and support for missionaries and Gospel outreach worldwide. Registration required.' },
-                  { label: 'Thanksgiving Celebration',       note: 'November',                  desc: 'Gathering together to give thanks to the Lord for His goodness, faithfulness, and grace. Registration required.' },
-                  { label: 'Christmas Eve Candlelight',      note: 'Dec 24 · Special Service',  desc: 'A beautiful evening of carols, candlelight, and the proclamation of Christ\'s birth. Registration required.' },
+                  { label: 'Resurrection Sunday',            note: 'April · Special Service',  desc: 'A powerful celebration of the risen Lord Jesus Christ — praise, Gospel preaching, and joy.' },
+                  { label: 'Musical Presentation', note: 'Seasonal',                  desc: 'Special services featuring music and worship reflecting the international diversity of our congregation.' },
+                  { label: 'Missions Sundays',               note: 'Throughout the year',       desc: 'Dedicated Sundays for prayer, giving, and support for missionaries and Gospel outreach worldwide.' },
+                  { label: 'Thanksgiving Celebration',       note: 'November',                  desc: 'Gathering together to give thanks to the Lord for His goodness, faithfulness, and grace.' },
+                  { label: 'Christmas Eve Candlelight',      note: 'Dec 24 · Special Service',  desc: 'A beautiful evening of carols, candlelight, and the proclamation of Christ\'s birth.' },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3 px-6 py-3.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-church-gold shrink-0" aria-hidden="true" />
