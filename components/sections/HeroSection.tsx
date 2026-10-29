@@ -63,9 +63,9 @@ export default function HeroSection() {
         <motion.blockquote
           {...fadeUp(0.55)}
           className="font-lora italic text-white/65 text-sm mt-4"
-          cite="Romans: Chapter 12, Verse 10"
+          cite="1 Peter: Chapter 3, Verse 18"
         >
-          &ldquo;Be kindly affectioned one to another with brotherly love; in honour preferring one another.&rdquo; — Romans: Chapter 12, Verse 10
+          &ldquo;For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God.&rdquo; — 1 Peter: Chapter 3, Verse 18
         </motion.blockquote>
 
         <motion.div
