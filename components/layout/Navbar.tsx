@@ -46,10 +46,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold rounded">
-          <span className="font-serif font-bold text-lg text-church-navy">
-            Victory <span className="text-church-gold font-sans font-normal">✝</span> Baptist Church
-          </span>
-          <span className="font-sans text-xs text-church-gold tracking-widest uppercase">Stuttgart</span>
+          <img src="/images/vbc_logo.png" alt="Victory Baptist Church Stuttgart" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop nav */}
