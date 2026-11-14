@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { RiArrowRightLine, RiGlobalLine, RiExternalLinkLine } from 'react-icons/ri';
 
 const posters = [
-  { src: '/images/vbc_poster_1.jpg', alt: 'Sunday Morning Service, Sunday 10:30 AM. With the truth in his hands and the love of Christ in his heart.' },
-  { src: '/images/vbc_poster_2.jpg', alt: 'Advanced Christianity, Sunday 6:00 PM, June to August 1:00 PM. We deepen our roots, so that we rise higher.' },
-  { src: '/images/vbc_poster_3.jpg', alt: 'The Hour of Power, Wednesday 7:00 PM. Without Him, we can do nothing.' },
-  { src: '/images/vbc_poster_4.jpg', alt: 'The Church of the Living God, 1 Timothy 3:15: the pillar and ground of the truth.' },
+  { src: '/images/vbc_poster_1b.jpg', alt: 'Sunday Morning Service, Sunday 10:30 AM. With the truth in his hands and the love of Christ in his heart.' },
+  { src: '/images/vbc_poster_2b.jpg', alt: 'Advanced Christianity, Sunday 6:00 PM, June to August 1:00 PM. We deepen our roots, so that we rise higher.' },
+  { src: '/images/vbc_poster_3b.jpg', alt: 'The Hour of Power, Wednesday 7:00 PM. Without Him, we can do nothing.' },
+  { src: '/images/vbc_poster_4b.jpg', alt: 'The Church of the Living God, 1 Timothy 3:15: the pillar and ground of the truth.' },
 ];
 
 export default function ServicesSection() {
