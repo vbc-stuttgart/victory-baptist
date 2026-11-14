@@ -1,46 +1,14 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import AnimatedSection, { AnimatedItem } from '@/components/ui/AnimatedSection';
 import Link from 'next/link';
-import { RiBookOpenLine, RiMoonLine, RiFireLine, RiArrowRightLine, RiGlobalLine, RiExternalLinkLine } from 'react-icons/ri';
+import Image from 'next/image';
+import { RiArrowRightLine, RiGlobalLine, RiExternalLinkLine } from 'react-icons/ri';
 
-const services = [
-  {
-    icon:        RiBookOpenLine,
-    title:       'Sunday Morning Service',
-    time:        'Sunday · 10:30 AM',
-    description: "With the truth in his hands and the love of Christ in his heart, our pastor preaches God's message to us every Sunday at 10:30 a.m.",
-    tag:         'PREACHING',
-  },
-  {
-    icon:        RiMoonLine,
-    title:       'Advanced Christianity',
-    time:        'Sunday · Afternoon / Evening',
-    description: 'Salvation is not the end. It is a wonderful beginning, but still just the beginning of the christian life. Every Sunday evening, we deepen our roots, so that we rise higher in our spiritual life.',
-    tag:         'PERFECTING / DISCIPLESHIP',
-  },
-  {
-    icon:        RiFireLine,
-    title:       'The Hour of Power',
-    time:        'Wednesday · 7:00 PM.',
-    description: 'Every Wednesday we meet and fellowship in prayer with the Lord Jesus. Without Him, we can do nothing.',
-    tag:         'POWER',
-  },
-  {
-    icon:        RiBookOpenLine,
-    title:       'The Church of the Living God',
-    time:        '1 Timothy 3:15',
-    description: "But if I tarry long, that thou mayest know how thou oughtest to behave thyself in the house of God, which is the church of the living God, the pillar and ground of the truth.",
-    tag:         'The Church',
-  },
-
-  /*{
-    icon:        RiHeartLine,
-    title:       'Community Care',
-    time:        'Everytime',
-    description: 'Whether you are weak, discouraged, afraid, struggling, or unsure of yourself, we will love you.',
-    tag:         'LOVE',
-  },*/
-
+const posters = [
+  { src: '/images/vbc_poster_1.jpg', alt: 'Sunday Morning Service, Sunday 10:30 AM. With the truth in his hands and the love of Christ in his heart.' },
+  { src: '/images/vbc_poster_2.jpg', alt: 'Advanced Christianity, Sunday 6:00 PM, June to August 1:00 PM. We deepen our roots, so that we rise higher.' },
+  { src: '/images/vbc_poster_3.jpg', alt: 'The Hour of Power, Wednesday 7:00 PM. Without Him, we can do nothing.' },
+  { src: '/images/vbc_poster_4.jpg', alt: 'The Church of the Living God, 1 Timothy 3:15: the pillar and ground of the truth.' },
 ];
 
 export default function ServicesSection() {
@@ -56,28 +24,20 @@ export default function ServicesSection() {
 
       {/* Service cards */}
       <AnimatedSection stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
-        {services.map((service) => {
-          const Icon = service.icon;
-          return (
-            <AnimatedItem key={service.title}>
-              <article className="card-base p-6 h-full flex flex-col">
-                <div className="w-11 h-11 rounded-xl bg-church-navy/8 flex items-center justify-center mb-4 shrink-0">
-                  <Icon size={22} className="text-church-navy" aria-hidden="true" />
-                </div>
-                <div className="inline-block bg-church-gold/15 text-church-gold font-sans text-xs uppercase tracking-widest px-3 py-1 rounded-full mb-3 self-start">
-                  {service.time}
-                </div>
-                <h3 className="text-base mb-2">{service.title}</h3>
-                <p className="font-sans text-church-gray text-sm leading-relaxed flex-1">
-                  {service.description}
-                </p>
-                <div className="mt-4 pt-4 border-t border-gray-100">
-                  <span className="font-sans text-xs text-church-olive font-medium border border-church-olive/30 rounded px-2 py-0.5 tracking-wide whitespace-nowrap">{service.tag}</span>
-                </div>
-              </article>
-            </AnimatedItem>
-          );
-        })}
+        {posters.map((poster) => (
+          <AnimatedItem key={poster.src}>
+            <article className="card-base overflow-hidden h-full">
+              <Image
+                src={poster.src}
+                alt={poster.alt}
+                width={800}
+                height={1000}
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                className="w-full h-auto block"
+              />
+            </article>
+          </AnimatedItem>
+        ))}
       </AnimatedSection>
 
    <AnimatedSection delay={0.4} className="text-center">
