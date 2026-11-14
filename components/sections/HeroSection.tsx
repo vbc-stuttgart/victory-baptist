@@ -57,15 +57,15 @@ export default function HeroSection() {
           {...fadeUp(0.4)}
           className="font-lora italic text-white/90 text-xl mt-6 max-w-xl text-balance"
         >
-          We are an English-speaking independent Baptist church in Stuttgart, preaching the gospel of salvation in Jesus Christ to the military community.
+          We are an English-speaking Baptist church, preaching the gospel of salvation in Jesus Christ to the military and expat communities of Stuttgart.
         </motion.p>
 
         <motion.blockquote
           {...fadeUp(0.55)}
           className="font-lora italic text-white/65 text-sm mt-4"
-          cite="1 Peter: Chapter 3, Verse 18"
+          cite="1 Peter 3:18"
         >
-          &ldquo;For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God.&rdquo; — 1 Peter: Chapter 3, Verse 18
+          &ldquo;For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God.&rdquo; — 1 Peter 3:18
         </motion.blockquote>
 
         <motion.div
