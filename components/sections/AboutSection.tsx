@@ -15,7 +15,7 @@ export default function AboutSection() {
 
           <div className="space-y-5 text-church-gray">
             <p className="font-sans text-base md:text-lg leading-relaxed">
-              Our heartfelt mission is to teach men, ladies, and children to know God and to walk with Him.
+              Our heartfelt mission is to preach the Gospel of Salvation in Jesus Christ; and our prayer is for people everywhere to know the Lord Jesus Christ as their personal Saviour. Our congregation is made up of military personnel, expats, foreign workers, students, and international families from all over the world.
             </p>
             <p className="font-sans text-base md:text-lg leading-relaxed">
               Whether you are weak, discouraged, afraid, struggling, or unsure of yourself, we will love you as Christ has loved us.
