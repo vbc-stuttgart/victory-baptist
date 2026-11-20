@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     'Support the ministry of Victory Baptist Church Stuttgart through your generous offering.',
 };
 
+const PAYPAL_QR_URL =
+  'https://www.paypal.com/qrcodes/managed/64c7c066-887c-4575-abde-cf9d91da82ef?utm_source=old_merchant_lp';
+
 export default function GivingPage() {
   return (
     <>
@@ -119,6 +122,42 @@ export default function GivingPage() {
                     Scan to donate<br />directly via bank transfer
                   </p>
                 </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* PayPal */}
+          <AnimatedSection delay={0.25} className="mt-8">
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-church-navy/10">
+              <div className="flex flex-col items-center text-center gap-5">
+                <div>
+                  <h3 className="font-serif font-semibold text-xl text-church-navy mb-2">PayPal</h3>
+                  <p className="font-sans text-church-gray text-sm">
+                    Scan to give with PayPal
+                  </p>
+                </div>
+                <a
+                  href={PAYPAL_QR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white rounded-xl p-3 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-church-gold"
+                >
+                  <Image
+                    src="/images/paypal-qr.png"
+                    alt="QR code to give with PayPal to Victory Baptist Church Stuttgart"
+                    width={240}
+                    height={240}
+                    className="rounded-lg"
+                  />
+                </a>
+                <a
+                  href={PAYPAL_QR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full font-sans font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 min-h-[48px] cursor-pointer bg-church-gold text-white hover:bg-church-goldLight focus-visible:ring-church-navy px-8 py-4 text-base"
+                >
+                  Give with PayPal
+                </a>
               </div>
             </div>
           </AnimatedSection>
